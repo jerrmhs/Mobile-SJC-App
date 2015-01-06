@@ -49,17 +49,18 @@
 	
 	
 	<body>
-		<div data-role="page" id="home-page" data-theme='a'>
+		<div data-role="page" id="online-services-page" data-theme='a'>
 			<!-- sidebar -->
 			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
 				<ul data-role="listview">
-					<li data-role="list-divider" style="height:10em;" id="left-panel-img">
-						<!--
-						<img style="position:static;max-height:10em;max-width:10em;" src="img/countySeal.png">
-						-->
+					<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Online Services</a>
+						<ul>
+							<li><a href="#page-one">Test Page 1</a></li>
+							<li><a href="#page-two">Test Page 2</a></li>
+							</ul>
 					</li>
-					<li><a href="#">Home</a></li>
-					<li><a href="online-services.html">Online Services</a></li>
 					<li><a href="#">Forms & Filing</a></li>
 					<li><a href="#">Self-Help</a></li>
 					<li><a href="#">Divisions</a></li>
@@ -72,44 +73,87 @@
 				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
 			</div>
 			
+			<!-- footer -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<a href="#left-panel" data-theme="a">left panel</a>
+			</div>
+			
 			<!-- content -->
 			<div data-role="content" data-theme='a' style="padding:0.5em;">
-				<h2>Mission Statement</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;The San Joaquin Superior Court shall resolve disputes and address problems applying the rule of law in a fair, equal, consistent, efficient, timely, and understandable manner with integrity and professionalism. The court shall promote public confidence and provide user-friendly, customer oriented services and treat all people with respect and dignity in a safe and secure environment.
-				
-				<h2>Notice</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;Beginning Monday, December 23, 2013, court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side (San Joaquin Street side) of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse. Additionally, pedestrian access to the courthouse has been rerouted. Please read this PUBLIC NOTICE to view a map of the detour.
-				&nbsp;&nbsp;&nbsp;&nbsp;Beginning Monday, December 23, 2013, court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side (San Joaquin Street side) of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse. Additionally, pedestrian access to the courthouse has been rerouted. Please read this PUBLIC NOTICE to view a map of the detour.
+				<h2>Online Services</h2>
+				Online services.
 			</div>
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<a href="#left-panel" data-theme="a">left-sidebar</a>
+		</div>
+
+		<div data-role="page" id="page-one" data-theme="a">
+			<!-- panel -->
+			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
+				<ul data-role="listview">
+					<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#online-services-page">Online Services</a>
+						<ul>
+							<li><a href="#page-1">Test Page 1</a></li>
+							<li><a href="#page-2">Test Page 2</a></li>
+							</ul>
+					</li>
+					<li><a href="#">Forms & Filing</a></li>
+					<li><a href="#">Self-Help</a></li>
+					<li><a href="#">Divisions</a></li>
+					<li><a href="#">General Info</a></li>
+				</ul>
 			</div>
 			
-			<!--
-			<div id="headerWrap">
-				The Superior Court of California<br />
-				County of San Joaquin
-				<div id="headerFoot"></div>
+			<!-- header -->
+			<div id="headerWrap" class="header-bar" data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
 			</div>
-			-->
+			
+			<!-- footer -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<a href="#left-panel" data-theme="a">left panel</a>
+			</div>
+			
+			<!-- content -->
+			<div data-role="content" data-theme="a">
+				PAGE ONE TEST
+			</div>
 		</div>
 		
-		
+		<div data-role="page" id="page-two" data-theme="a">
+			<!-- panel -->
+			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
+				<ul data-role="listview">
+					<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#online-services-page">Online Services</a>
+						<ul>
+							<li><a href="#page-1">Test Page 1</a></li>
+							<li><a href="#page-2">Test Page 2</a></li>
+							</ul>
+					</li>
+					<li><a href="#">Forms & Filing</a></li>
+					<li><a href="#">Self-Help</a></li>
+					<li><a href="#">Divisions</a></li>
+					<li><a href="#">General Info</a></li>
+				</ul>
+			</div>
 			
+			<!-- header -->
+			<div id="headerWrap" class="header-bar" data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
+			</div>
+			
+			<!-- footer -->
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<a href="#left-panel" data-theme="a">left panel</a>
+			</div>
+			
+			<!-- content -->
+			<div data-role="content" data-theme="a">
+				PAGE TWO TEST
+			</div>
+		</div>
 		
-		<!--
-        <div class="app">
-            <h1>Device</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">checking connection</p>
-                <p class="event received">connected</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-		-->
     </body>
 </html>
