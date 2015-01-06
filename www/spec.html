@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -19,50 +21,111 @@
 -->
 <html>
     <head>
-        <title>Jasmine Spec Runner</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-        <!-- jasmine source -->
-        <link rel="shortcut icon" type="image/png" href="spec/lib/jasmine-1.2.0/jasmine_favicon.png">
-        <link rel="stylesheet" type="text/css" href="spec/lib/jasmine-1.2.0/jasmine.css">
-        <script type="text/javascript" src="spec/lib/jasmine-1.2.0/jasmine.js"></script>
-        <script type="text/javascript" src="spec/lib/jasmine-1.2.0/jasmine-html.js"></script>
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
 
-        <!-- include source files here... -->
-        <script type="text/javascript" src="js/index.js"></script>
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+		
+		<title>SCSJC App</title>
+		
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script>
 
-        <!-- include spec files here... -->
-        <script type="text/javascript" src="spec/helper.js"></script>
-        <script type="text/javascript" src="spec/index.js"></script>
+			$( document ).on( "pagecreate", "#home-page", function() {
+				$.event.special.swipe.scrollSupressionThreshold = 10; // More than this horizontal displacement, and we will suppress scrolling.
+				$.event.special.swipe.horizontalDistanceThreshold = 30; // Swipe horizontal displacement must be more than this.
+				$.event.special.swipe.durationThreshold = 500;  // More time than this, and it isn't a swipe.
+				$.event.special.swipe.verticalDistanceThreshold = 75; // Swipe vertical displacement must be less than this.
 
-        <script type="text/javascript">
-            (function() {
-                var jasmineEnv = jasmine.getEnv();
-                jasmineEnv.updateInterval = 1000;
-
-                var htmlReporter = new jasmine.HtmlReporter();
-
-                jasmineEnv.addReporter(htmlReporter);
-
-                jasmineEnv.specFilter = function(spec) {
-                    return htmlReporter.specFilter(spec);
-                };
-
-                var currentWindowOnload = window.onload;
-
-                window.onload = function() {
-                    if (currentWindowOnload) {
-                        currentWindowOnload();
-                    }
-                    execJasmine();
-                };
-
-                function execJasmine() {
-                    jasmineEnv.execute();
-                }
-            })();
-        </script>
+				$( document ).on( "swiperight", "#home-page", function( e ) {
+					// e.preventDefault();
+					//if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+						$( "#left-panel" ).panel( "open" );
+					//}
+				});
+			});
+		</script>
     </head>
-    <body>
-        <div id="stage" style="display:none;"></div>
+	
+	
+	<body>
+		<div data-role="page" id="home-page" data-theme='a'>
+			<!-- sidebar -->
+			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
+				<ul data-role="listview">
+					<li data-role="list-divider" style="height:10em;" id="left-panel-img">
+						<!--
+						<img style="position:static;max-height:10em;max-width:10em;" src="img/countySeal.png">
+						-->
+					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Online Services</a></li>
+					<li><a href="#">Forms & Filing</a></li>
+					<li><a href="#">Self-Help</a></li>
+					<li><a href="#">Divisions</a></li>
+					<li><a href="#">General Info</a></li>
+				</ul>
+			</div>
+			
+			<!-- header -->
+			<div id="headerWrap" class="header-bar" data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
+			</div>
+			
+			<!-- content -->
+			<div data-role="content" data-theme='a' style="padding:0.5em;">
+				<h2>Different Page</h2>
+				Blah blah blah
+			</div>
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+				<a href="#left-panel" data-theme="a">Contact</a>
+				<a href="#left-panel" data-theme="a">Jobs</a>
+				<a href="#left-panel" data-theme="a">buttons</a>
+			</div>
+			
+			<!--
+			<div id="headerWrap">
+				The Superior Court of California<br />
+				County of San Joaquin
+				<div id="headerFoot"></div>
+			</div>
+			-->
+			
+		
+			
+		</div>
+		
+		
+			
+		
+		<!--
+        <div class="app">
+            <h1>Device</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">checking connection</p>
+                <p class="event received">connected</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+		-->
     </body>
 </html>
