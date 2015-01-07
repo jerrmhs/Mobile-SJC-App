@@ -47,113 +47,37 @@
 		<script type="text/javascript" src="js/app.js"></script>
     </head>
 	
-	
 	<body>
-		<div data-role="page" id="online-services-page" data-theme='a'>
-			<!-- sidebar -->
-			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-				<ul data-role="listview">
-					<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Online Services</a>
-						<ul>
-							<li><a href="#page-one">Test Page 1</a></li>
-							<li><a href="#page-two">Test Page 2</a></li>
-							</ul>
-					</li>
-					<li><a href="#">Forms & Filing</a></li>
-					<li><a href="#">Self-Help</a></li>
-					<li><a href="#">Divisions</a></li>
-					<li><a href="#">General Info</a></li>
-				</ul>
-			</div>
-			
-			<!-- header -->
-			<div id="headerWrap" class="header-bar" data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
-			</div>
-			
-			<!-- footer -->
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<a href="#left-panel" data-theme="a">left panel</a>
-			</div>
-			
-			<!-- content -->
-			<div data-role="content" data-theme='a' style="padding:0.5em;">
-				<h2>Online Services</h2>
-				Online services.
-			</div>
+		<!-- sidebar gets updated to include nested links -->
+		<!-- sidebar -->
+		<!--
+		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
+			<ul data-role="listview">
+				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="online-services.html">Online Services</a>
+					<ul data-role="listview">
+						<a href="#">Page One</a>
+						<a href="#">Page Two</a>
+					</ul>
+				</li>
+				<li><a href="#">Forms & Filing</a></li>
+				<li><a href="#">Self-Help</a></li>
+				<li><a href="#">Divisions</a></li>
+				<li><a href="#">General Info</a></li>
+			</ul>
 		</div>
-
-		<div data-role="page" id="page-one" data-theme="a">
-			<!-- panel -->
-			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-				<ul data-role="listview">
-					<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#online-services-page">Online Services</a>
-						<ul>
-							<li><a href="#page-1">Test Page 1</a></li>
-							<li><a href="#page-2">Test Page 2</a></li>
-							</ul>
-					</li>
-					<li><a href="#">Forms & Filing</a></li>
-					<li><a href="#">Self-Help</a></li>
-					<li><a href="#">Divisions</a></li>
-					<li><a href="#">General Info</a></li>
-				</ul>
-			</div>
-			
-			<!-- header -->
-			<div id="headerWrap" class="header-bar" data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
-			</div>
-			
-			<!-- footer -->
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<a href="#left-panel" data-theme="a">left panel</a>
-			</div>
-			
-			<!-- content -->
-			<div data-role="content" data-theme="a">
-				PAGE ONE TEST
+		-->
+		<!-- Online Services -->
+		<div data-role="page" id="home-page" data-theme="a">
+			<div data-role="content" data-theme="a" style="padding:0.5em;">
+				<h2>Online Services</h2>
+				&nbsp;&nbsp;&nbsp;&nbsp;Please note: The information on this site is provided to increase public access to your local courts. We make every attempt to keep the information current but that is not always possible. The information contained here does not constitute the official record of the court and may contain errors or omissions. By selecting an option below, you signify that you have read the foregoing.
+				<br /><a href="index.html">Home</a>
 			</div>
 		</div>
 		
-		<div data-role="page" id="page-two" data-theme="a">
-			<!-- panel -->
-			<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-				<ul data-role="listview">
-					<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#online-services-page">Online Services</a>
-						<ul>
-							<li><a href="#page-1">Test Page 1</a></li>
-							<li><a href="#page-2">Test Page 2</a></li>
-							</ul>
-					</li>
-					<li><a href="#">Forms & Filing</a></li>
-					<li><a href="#">Self-Help</a></li>
-					<li><a href="#">Divisions</a></li>
-					<li><a href="#">General Info</a></li>
-				</ul>
-			</div>
-			
-			<!-- header -->
-			<div id="headerWrap" class="header-bar" data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
-			</div>
-			
-			<!-- footer -->
-			<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-				<a href="#left-panel" data-theme="a">left panel</a>
-			</div>
-			
-			<!-- content -->
-			<div data-role="content" data-theme="a">
-				PAGE TWO TEST
-			</div>
-		</div>
+		
 		
     </body>
 </html>
