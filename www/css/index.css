@@ -125,6 +125,76 @@ h1 {
 .ui-header.ui-bar-b,.ui-footer.ui-bar-b {
 	background-color: #1C70B0 !important;
 }
+/* -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   */
+
+.ui-collapsible .ui-collapsible-content {
+    margin: 0 0 !important;
+    padding: 10px 0 !important;
+}
+
+/*
+.ui-icon-plus:before {
+	content: "\f067";
+}
+*/
+
+/* Enable hardware acceleration for the CSS transition */
+.ui-panel .ui-listview { 
+	-webkit-transform: translate3d(0,0,0);
+}
+.ui-panel .ui-listview .ui-btn {
+	-webkit-transform: translate3d(0,0,0);
+}
+/* -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  */
+/* collapsible li's in left panel */
+/* Basic settings */
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom-width: 0;
+}
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn {
+    border-bottom-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn {
+    border-top-width: 0;
+}
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-right-width: 0;
+}
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-left-width: 0;
+}
+/* -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  */
+/* trying to make the left panel links bigger */
+#left-panel, #left-panel .ui-panel-inner, #left-panel .ui-listview , #left-panel .ui-listview li a{
+	height: 100%;
+}
+
+#left-panel .ui-listview li {
+	height: 10%;
+}
+/* -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  */
 
 #left-panel-img {
 	background-image: url(../img/countySeal.png);
