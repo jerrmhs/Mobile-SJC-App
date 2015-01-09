@@ -202,3 +202,11 @@ h1 {
 	background-position: center;
 	background-size: 10em;
 }
+
+.noticeWrapper, .noticeWrapper div.iscroll-scroller {
+	height: 12em;
+	overflow-y:scroll;
+}
+.ui-block-a {
+	line-height: 150%;
+}
