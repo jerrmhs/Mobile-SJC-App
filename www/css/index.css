@@ -186,14 +186,15 @@ h1 {
     border-left-width: 0;
 }
 /* -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  */
-/* trying to make the left panel links bigger */
+/* trying to make the left panel links bigger 
 #left-panel, #left-panel .ui-panel-inner, #left-panel .ui-listview , #left-panel .ui-listview li a{
 	height: 100%;
 }
-
-#left-panel .ui-listview li {
-	height: 10%;
+*/
+#left-panel .ui-listview li a {
+	height: 100px;
 }
+
 /* -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  - -   -  */
 
 #left-panel-img {
@@ -209,4 +210,49 @@ h1 {
 }
 .ui-block-a {
 	line-height: 150%;
+}
+
+#homeimg {
+	background-image: url('../img/stockton_courthouse.min.png');
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position-x: center;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+}
+
+h2 hr {
+	margin:0px 0px 10px 0px !important;
+}
+
+p {
+	text-indent: 1rem;
+}
+ul {
+	list-style-type:circle;
+	padding-left:1.5rem;
+}
+.content-block {
+	padding-bottom: 1rem;
+}
+.notice {
+	background-color: #FFB756;
+	color: #FFF;
+	padding:0.05rem 0.5rem 0.5rem 0.5rem;
+	border-radius:0.5rem;
+	
+}
+.notice h2 hr {
+	border-bottom: 1px solid rgba(255,255,255,0.65);
+}
+.notice div {
+	background-color:#fff;
+	color:#333;
+	padding:0.5rem;
+}
+.notice div h4 {
+	text-align: center;
+	margin-top: 0px;
+	font-weight: bold;
 }
