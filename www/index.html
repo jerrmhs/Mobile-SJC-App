@@ -45,8 +45,23 @@
 		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		
 		<script type="text/javascript" src="js/app.js"></script>
+		
+		<style>
+		.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+			margin: 0;
+		}
+		.ui-li-static.ui-collapsible {
+			padding: 0;
+		}
+		.ui-li-static.ui-collapsible > .ui-collapsible-heading > .ui-btn {
+			border-top-width: 0;
+		}
+		.ui-li-static.ui-collapsible > .ui-collapsible-heading.ui-collapsible-heading-collapsed > .ui-btn,
+		.ui-li-static.ui-collapsible > .ui-collapsible-content {
+			border-bottom-width: 0;
+		}
+		</style>
     </head>
-	
 	
 	<body>
 	
@@ -56,296 +71,188 @@
 		</div>
 		
 		<!-- footer -->
+		<!--
 		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
 			<a href="#left-panel" data-theme="a">left-sidebar</a>
 		</div>
+		-->
 		
 		<!-- sidebar -->
 		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-			<!--
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-iconpos="right">
-					<h1>Online Services</h1>
-					<ul>
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
-			
-				<div data-role="collapsible" data-iconpos="right">
-					<h3>Test</h3>
-					<ul>
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
-			
-				<div data-role="collapsible" data-icon="arrow-r" data-iconpos="right">
-					<h1 style="margin-top: 0px !important;margin-bottom: -.5px !important;">Add Map</h1>
-                    <ul data-role="listview" data-inset="false" data-divider-theme="a">                
-                        <li>
-                            <a href="" data-transition="slide" data-native-menu = "false">By ZipCode</a>
-                        </li>
-                        <li>
-                            <a href="" data-transition="slide" data-native-menu = "false">By Street #</a>
-                        </li>
-                    </ul>
-				</div>
-			</div>
-			-->
-			
-			<!--
-			<ul data-role="listview" class="ui-listview-outer">
-				<!-- regular link
-				<li><a href="#">Home</a></li>
-				
-				<!-- collapsible link
-				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" >
-					<h2>Online Services</h2>
-					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
-						<li><a href="#">Traffic Payments Online</a></li>
-						<li><a href="#">Probate Notes</a></li>
-						<li><a href="#">Family Law, Criminal, Traffic</a></li>
-						<li><a href="#">Family Law, Tentative Rulings</a></li>
-						<li><a href="#">Civil, Small Claims, Probate</a></li>
-					</ul>
-				</li>
-				
-				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
-					<h2>Fish</h2>
-					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
-						<li><a href="#">Salmon</a></li>
-						<li>Pollock</li>
-						<li>Trout</li>
-					</ul>
-				</li>
-			</ul>
-			 -->
-			
-			<!--
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-				<div data-role="collapsible-set">
-				
-					<div data-role="collapsible" data-iconpos="right">
-						<h1>Online Services</h1>
-						<ul>
-							<li><a href="#">Test 1</a></li>
-						</ul>
-					</div>
-
-					<div data-role="collapsible" data-iconpos="right">
-						<h3>Test</h3>
-						<ul>
-							<li><a href="#">Test 1</a></li>
-						</ul>
-					</div>
-					
-				</div>
-			</ul>
-			-->
 			
 			<ul data-role="listview">
 				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
 				<li><a href="index.html" data-ajax="false">Home</a></li>
-				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
-				<li><a href="index.html#stocktonInfo">Test</a></li>
-				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
-				
-				<div data-role="collapsible" data-iconpos="right" data-corners="false">
-					<h2 data-role="list-divider">Online Services</h2>
-					<ul data-role="listview">
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
+				<li><a href="onlineServices.html" data-ajax="false">Online Services</a></li>
+				<li><a href="generalInfo.html" data-ajax="false">General Info</a></li>
 			</ul>
-			
 		</div>
 	
 		<!-- Home -->
 		<div data-role="page" id="home-page" data-theme='a'>
 			<div data-role="content" data-theme='a' style="padding:0.5em;">
-				<h2>Mission Statement</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;<p>The San Joaquin Superior Court shall resolve disputes and address problems applying the rule of law in a fair, equal, consistent, efficient, timely, and understandable manner with integrity and professionalism. The court shall promote public confidence and provide user-friendly, customer oriented services and treat all people with respect and dignity in a safe and secure environment.</p>
-				<img src="img/Stockton_Courthouse.png" alt="Stockton Court House">
-			
-			<br /><br/>
-
-				<h2>Courthouse Information</h2>
-				<p>Beginning Monday, December 23, 2013, court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side (San Joaquin Street side) of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse. Additionally, pedestrian access to the courthouse has been rerouted. Please read this&nbsp;<strong><a href="files/fileHolder.pdf" data-ajax="false">PUBLIC NOTICE</a></strong>&nbsp;to view a map of the detour.</p><br />
-				<br/>
-				<div data-role="collapsible">
-							<h4>COURT NOTICE</h4>
-							<p>Pedestrian Access and Entrance Change for Stockton Courthouse</p>
+				<div id="homeimg" alt="Stockton Court House"></div>
+				
+				<div class="content-block">
+					<h2>Mission Statement<hr></h2>
+					<p>The San Joaquin Superior Court shall resolve disputes and address problems applying the rule of law in a fair, equal, consistent, efficient, timely, and understandable manner with integrity and professionalism. The court shall promote public confidence and provide user-friendly, customer oriented services and treat all people with respect and dignity in a safe and secure environment.</p>
+				</div>
+				
+				<div class="notice content-block">
+					<h2>Notice:<hr></h2>
+					<div>
+						<h4>Entrance Change for Stockton Courthouse</h4>
+						<p>
+							Court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse.
+						</p>
+					</div>
 				</div>
 				<br />
-				<a href="#popupBasic" data-rel="popup">Court News & Notices</a>
-				<br /><br/>
-				<div class="ui-grid-a">
-					<div class="ui-block-a" style="padding=3px 3px 3px 3px;">
-						<h3>Court Location, Hours, & Contact Information</h3>
-						<p><ui><a href="#stocktonPopup" data-rel="popup" data-position-to="window">Stockton Courthouse</a><br />
-						<a href="#familyLawPopup" data-rel="popup" data-position-to="window">Stockton Family Law Courthouse</a><br />
-						<a href="#juvenilePopup" data-rel="popup" data-position-to="window">Juvenile Justice Center</a><br />
-						<a href="#lodiPopup" data-rel="popup" data-position-to="window">Lodi Branch</a><br />
-						<a href="#mantecaPopup" data-rel="popup" data-position-to="window">Manteca Branch</a><br />
-						<a href="#tracyPopup" data-rel="popup" data-position-to="window">Tracy Branch</a></ui><i> (BRANCH CLOSED UNTIL FURTHER NOTICE)</i></p>
-					</div>
-					
-					<div class="ui-block-b" style="padding=3px;">
-						<h3>COURT NEWS</h3>
-					<div class="noticeWrapper" data-iscroll>
-						<p><a href="#"><u>2015-01-02</u></a>: Michael Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-						<p><a href="#"><u>2015-01-03</u></a>: Jerry Somthing Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-						<p><a href="#"><u>2015-01-04</u></a>: Nick is fired for not doing the right thing Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-						<p><a href="#"><u>2015-01-05</u></a>: What is this doing here Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-						<p><a href="#"><u>2015-01-06</u></a>: 13f sdf 234f hga the right thing Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-						<p><a href="#"><u>2015-01-07</u></a>: asldinewasdf hing Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-						<p><a href="#"><u>2015-01-08</u></a>: Nick is fired for not doing the right thing Mulvihill Appointed to San Joaquin Superior Court Bench</p>
-					</div>
+				<div class="content-block">
+					<h2>Court News & Notices<hr></h2>
+					<ul style="max-height:225px;overflow-y:scroll;">
+						<li><a href="#"><u>2015-01-02</u></a>: Michael Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+						<li><a href="#"><u>2015-01-03</u></a>: Jerry Somthing Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+						<li><a href="#"><u>2015-01-04</u></a>: Nick is fired for not doing the right thing Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+						<li><a href="#"><u>2015-01-05</u></a>: What is this doing here Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+						<li><a href="#"><u>2015-01-06</u></a>: 13f sdf 234f hga the right thing Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+						<li><a href="#"><u>2015-01-07</u></a>: asldinewasdf hing Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+						<li><a href="#"><u>2015-01-08</u></a>: Nick is fired for not doing the right thing Mulvihill Appointed to San Joaquin Superior Court Bench</li>
+					</ul>
+				</div>
 				
-					</div>
-				</div><!-- /grid-a -->
+				<div class="content-block">
+					<h2>Courthouse Information<hr></h2>
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<a class="ui-btn" style="font-size:13px;" href="#stocktonPopup" data-rel="popup" data-position-to="window">Stockton Courthouse</a>
+							<a class="ui-btn" style="font-size:13px;" href="#juvenilePopup" data-rel="popup" data-position-to="window">Juvenile Justice Center</a>
+							<a class="ui-btn" style="font-size:13px;" href="#mantecaPopup" data-rel="popup" data-position-to="window">Manteca Branch</a>
+						</div>
+						<div class="ui-block-b">
+							<a class="ui-btn" style="font-size:13px;" data-theme="a" href="#familyLawPopup" data-rel="popup" data-position-to="window">Stockton Family Law Courthouse</a>
+							<a class="ui-btn" style="font-size:13px;" data-theme="a" href="#lodiPopup" data-rel="popup" data-position-to="window">Lodi Branch</a>
+							<a class="ui-btn" style="font-size:13px;" data-theme="a" href="#tracyPopup" data-rel="popup" data-position-to="window">Tracy Branch</a>
+						</div>
+					</fieldset>
+				</div>
 				
 			</div>
 			<!-- Court houses popups, this will popup when the link is click -->
-			<div data-role="popup" data-theme="a" id="stocktonPopup" class="ui-content">
-				<div style="padding: 10px;">
-				<a href="generalInfo.html#stocktonInfo"><h3>Stockton Courthouse</h3></a>
-				<br/><br/>
+			<div data-role="popup" data-theme="a" id="stocktonPopup" class="ui-content" style="padding: 10px;">
+				<h2>Stockton Courthouse</h2>
 				<u>Physical Address:</u><br/>
 				222 E. Weber Avenue<br/>
 				Stockton, California 95202<br/>
 				<br/>
+				
 				<u>Mailing Address:</u><br/>
 				Superior Court of California, County of San Joaquin<br/>
 				PO Box 201022<br/>
 				Stockton, California 95201<br/>
+				<br/>
 				
-				<h3>Telephone Numbers</h3>
-				922-5555&nbsp;&nbsp;Information<br/>
+				<u>Telephone Numbers:</u><br />
+				992-5555 &nbsp; &nbsp;Information<br />
+				<br/>
 				
-				<a href="#">More information...</a>
-				</div>
+				<a class="ui-btn" data-ajax="false" href="generalInfo.html#stocktonInfo">More information...</a>
 			</div>
 			
-			<div data-role="popup" id="familyLawPopup" class="ui-content">
-				<div style="padding: 10px;">
-				<a href="generalInfo.html#familyInfo"><h3>Stockton Family Law Courthouse</h3></a>
-				<br/><br/>
+			<div data-role="popup" id="familyLawPopup" class="ui-content" style="padding: 10px;">
+				<h2>Stockton Family Law Courthouse</h2>
 				<u>Physical Address:</u><br/>
 				540 E. Main Street<br/>
 				Stockton, California 95202<br/>
-				<br/>				
-				<h3>Telephone Numbers</h3>
+				<br/>
+				
+				<u>Telephone Numbers</u><br/>
 				922-5555&nbsp;&nbsp;Information<br/>
+				<br/>
 				
-				<a href="#">More information...</a>
-				</div>
-				
+				<a class="ui-btn" data-ajax="false" href="generalInfo.html#familyInfo">More information...</a>
 			</div>
 			
-			<div data-role="popup" id="juvenilePopup" class="ui-content">
-				<div style="padding: 10px;">
-				<h3>Juvenile Justice Center</h3>
-				<br/><br/>
+			<div data-role="popup" id="juvenilePopup" class="ui-content" style="padding: 10px;">
+				<h2>Juvenile Justice Center</h2>
 				<u>Physical Address:</u><br/>
 				535 West Mathews Road<br/>
 				French Camp, California 95202<br/>
 				<br/>
+				
 				<u>Mailing Address:</u><br/>
 				San Joaquin County Superior Court - Juvenile Division<br/>
 				535 West Mathews Road<br/>
 				French Camp, California 95231<br/>
+				<br/>
 				
-				<h3>Telephone Numbers</h3>
+				<u>Telephone Numbers</u>
 				922-5555&nbsp;&nbsp;Information<br/>
+				<br/>
 				
-				<a href="#">More information...</a>
-				</div>
-				
+				<a class="ui-btn" data-ajax="false" href="generalInfo.html#juvenilePopup">More information...</a>
 			</div>
 			
-			<div data-role="popup" id="lodiPopup" class="ui-content">
-				<div style="padding: 10px;">
-				<h3>Lodi Courthouse</h3>
+			<div data-role="popup" id="lodiPopup" class="ui-content" style="padding: 10px;">
+				<h2>Lodi Courthouse</h2>
+				<i>The Lodi Branch of the Superior Court is located in two buildings.</i><br/>
 				<br/>
-				<p><b>The Lodi Branch of the Superior Court is located in two buildings.</b></p>
-				<br/><br/>
+				
 				<u>Physical Address for Department L-1:</u><br/>
 				217 W. Elm Street (2nd Floor)<br/>
 				Lodi, California 95240<br/>
 				<br/>
+				
 				<u>Physical Address for Department L-2:</u><br/>
 				315 W. Elm Street<br/>
 				Lodi, California 95240<br/>
+				<br/>
+				
 				<u>Mailing Address:</u><br/>
 				Superior Court of California, Lodi Branch<br/>
 				315 W. Elm Street<br/>
 				Lodi, California 95240<br/>
+				<br/>
 				
-				<h3>Telephone Numbers</h3>
+				<u>Telephone Numbers</u>
 				922-5555&nbsp;&nbsp;Information<br/>
+				<br/>
 				
-				<a href="#">More information...</a>
-				</div>
-				
+				<a class="ui-btn" data-ajax="false" href="generalInfo.html#lodiPopup">More information...</a>
 			</div>
 			
-			<div data-role="popup" id="mantecaPopup" class="ui-content">
-				<div style="padding: 10px;">
-				<h3>Manteca Branch</h3>
-				<br/><br/>
+			<div data-role="popup" id="mantecaPopup" class="ui-content" style="padding: 10px;">
+				<h2>Manteca Branch</h2>					
 				<u>Physical Address:</u><br/>
 				315 E. Center Street<br/>
 				Manteca, California 95336<br/>
 				<br/>
+				
 				<u>Mailing Address:</u><br/>
 				Superior Court of California, County of San Joaquin<br/>
 				Manteca Branch<br/>
 				315 E. Center St<br/>
 				Manteca, California 95336<br/>
+				<br/>
 				
-				<h3>Telephone Numbers</h3>
+				<u>Telephone Numbers</u>
 				922-5555&nbsp;&nbsp;Information<br/>
+				<br/>
 				
-				<a href="#">More information...</a>
-				</div>
-				
+				<a class="ui-btn" data-ajax="false" href="generalInfo.html#mantecaPopup">More information...</a>
 			</div>
 			
-			<div data-role="popup" id="tracyPopup" class="ui-content">
-				<div style="padding: 10px;">
-				<h3>Tracy Branch</h3>
-				<br/><br/>
+			<div data-role="popup" id="tracyPopup" class="ui-content" style="padding: 10px;">
+				<h2>Tracy Branch</h2>					
 				<u>Physical Address:</u><br/>
 				475 E. 10th Street<br/>
 				Tracy, California 95376<br/>
-				<p><i>Effective October 3, 2011: This location will be closed until further notice.</i></p>
+				<i>Effective October 3, 2011: This location will be closed until further notice.</i><br/>
 				<br/>
 				
-				<a href="#">More information...</a>
-				</div>
-				
+				<a class="ui-btn" data-ajax="false" href="generalInfo.html#tracyPopup">More information...</a>
 			</div>
 			
 		</div>
-		
-		
-		<!-- Page 2 -->
-		<div data-role="page" id="page2">
-			<div data-role="content" data-theme="a">
-				Test
-				<a href="#home-page">Home</a>
-			</div>
-		</div>
-		
 	</body>
 </html>

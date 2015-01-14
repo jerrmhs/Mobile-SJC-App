@@ -47,37 +47,155 @@
 		<script type="text/javascript" src="js/app.js"></script>
     </head>
 	
+	
 	<body>
-		<!-- sidebar gets updated to include nested links -->
+	
+		<!-- header -->
+		<div data-id="headerWrap" class="header-bar" data-role="header" role="banner" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+			<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
+		</div>
+		
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+			<a href="#left-panel" data-theme="a">left-sidebar</a>
+		</div>
+		
 		<!-- sidebar -->
-		<!--
 		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="online-services.html">Online Services</a>
-					<ul data-role="listview">
-						<a href="#">Page One</a>
-						<a href="#">Page Two</a>
+			<!--
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-iconpos="right">
+					<h1>Online Services</h1>
+					<ul>
+						<li><a href="#">Test 1</a></li>
+						<li><a href="#">Test 2</a></li>
+						<li><a href="#">Test 3</a></li>
+						<li><a href="#">Test 4</a></li>
+					</ul>
+				</div>
+			
+				<div data-role="collapsible" data-iconpos="right">
+					<h3>Test</h3>
+					<ul>
+						<li><a href="#">Test 1</a></li>
+						<li><a href="#">Test 2</a></li>
+						<li><a href="#">Test 3</a></li>
+						<li><a href="#">Test 4</a></li>
+					</ul>
+				</div>
+			
+				<div data-role="collapsible" data-icon="arrow-r" data-iconpos="right">
+					<h1 style="margin-top: 0px !important;margin-bottom: -.5px !important;">Add Map</h1>
+                    <ul data-role="listview" data-inset="false" data-divider-theme="a">                
+                        <li>
+                            <a href="" data-transition="slide" data-native-menu = "false">By ZipCode</a>
+                        </li>
+                        <li>
+                            <a href="" data-transition="slide" data-native-menu = "false">By Street #</a>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+			-->
+			
+			<!--
+			<ul data-role="listview" class="ui-listview-outer">
+				<!-- regular link
+				<li><a href="#">Home</a></li>
+				
+				<!-- collapsible link
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" >
+					<h2>Online Services</h2>
+					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+						<li><a href="#">Traffic Payments Online</a></li>
+						<li><a href="#">Probate Notes</a></li>
+						<li><a href="#">Family Law, Criminal, Traffic</a></li>
+						<li><a href="#">Family Law, Tentative Rulings</a></li>
+						<li><a href="#">Civil, Small Claims, Probate</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Forms & Filing</a></li>
-				<li><a href="#">Self-Help</a></li>
-				<li><a href="#">Divisions</a></li>
-				<li><a href="#">General Info</a></li>
+				
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+					<h2>Fish</h2>
+					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+						<li><a href="#">Salmon</a></li>
+						<li>Pollock</li>
+						<li>Trout</li>
+					</ul>
+				</li>
 			</ul>
+			 -->
+			
+			<!--
+			<ul data-role="listview">
+				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+				<div data-role="collapsible-set">
+				
+					<div data-role="collapsible" data-iconpos="right">
+						<h1>Online Services</h1>
+						<ul>
+							<li><a href="#">Test 1</a></li>
+						</ul>
+					</div>
+
+					<div data-role="collapsible" data-iconpos="right">
+						<h3>Test</h3>
+						<ul>
+							<li><a href="#">Test 1</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</ul>
+			-->
+			
+			<ul data-role="listview">
+				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+				<li><a href="index.html" data-ajax="false">Home</a></li>
+				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
+				<li><a href="index.html#stocktonInfo">Test</a></li>
+				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
+				
+				<div data-role="collapsible" data-iconpos="right" data-corners="false">
+					<h2 data-role="list-divider">Online Services</h2>
+					<ul data-role="listview">
+						<li><a href="#">Test 1</a></li>
+						<li><a href="#">Test 2</a></li>
+						<li><a href="#">Test 3</a></li>
+						<li><a href="#">Test 4</a></li>
+					</ul>
+				</div>
+			</ul>
+			
 		</div>
-		-->
-		<!-- Online Services -->
-		<div data-role="page" id="home-page" data-theme="a">
-			<div data-role="content" data-theme="a" style="padding:0.5em;">
+	
+		<!-- Home -->
+		<div data-role="page" id="home-page" data-theme='a'>
+			<div data-role="content" data-theme='a' style="padding:0.5em;">
 				<h2>Online Services</h2>
-				&nbsp;&nbsp;&nbsp;&nbsp;Please note: The information on this site is provided to increase public access to your local courts. We make every attempt to keep the information current but that is not always possible. The information contained here does not constitute the official record of the court and may contain errors or omissions. By selecting an option below, you signify that you have read the foregoing.
-				<br /><a href="index.html">Home</a>
+				<p>Please note: The information on this site is provided to increase public access to your local courts. We make every attempt to keep the information current but that is not always possible. The information contained here does not constitute the official record of the court and may contain errors or omissions. By selecting an option below, you signify that you have read the foregoing.</p><br />
+				<br/>
+				ui-btn
+				<p>Click on the service you want to do...</p>
+				
+				<a href="https://www.paybill.com/sjcourt/" data-ajax="false" data-role="buttion" class="ui-btn">Pay Traffic Tickets/Fines</a>
+				<a href="#juryStatus" data-role="buttion" class="ui-btn">Get Jury Status</a>
+				<a href="#juryOpt" data-role="buttion" class="ui-btn">Jury Opt In/Out</a>
+				<a onclick="navigator.app.loadUrl('https://google.com/', { openExternal:true });" data-ajax="false" data-role="buttion" class="ui-btn">Link</a>
+				
+				
+			</div>
+			
+		</div>
+		
+		
+		<!-- Page 2 -->
+		<div data-role="page" id="page2">
+			<div data-role="content" data-theme="a">
+				Test
+				<a href="#home-page">Home</a>
 			</div>
 		</div>
 		
-		
-		
-    </body>
+	</body>
 </html>
