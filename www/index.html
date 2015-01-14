@@ -151,9 +151,10 @@
 			
 			<ul data-role="listview">
 				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="online-services.html">Online Services</a></li>
-				<li><a href="online-services.html">Online Services</a></li>
+				<li><a href="index.html" data-ajax="false">Home</a></li>
+				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
+				<li><a href="index.html#stocktonInfo">Test</a></li>
+				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
 				
 				<div data-role="collapsible" data-iconpos="right" data-corners="false">
 					<h2 data-role="list-divider">Online Services</h2>
@@ -214,10 +215,10 @@
 				</div><!-- /grid-a -->
 				
 			</div>
-			
+			<!-- Court houses popups, this will popup when the link is click -->
 			<div data-role="popup" data-theme="a" id="stocktonPopup" class="ui-content">
 				<div style="padding: 10px;">
-				<h3>Stockton Courthouse</h3>
+				<a href="generalInfo.html#stocktonInfo"><h3>Stockton Courthouse</h3></a>
 				<br/><br/>
 				<u>Physical Address:</u><br/>
 				222 E. Weber Avenue<br/>
@@ -237,7 +238,7 @@
 			
 			<div data-role="popup" id="familyLawPopup" class="ui-content">
 				<div style="padding: 10px;">
-				<h3>Stockton Family Law Courthouse</h3>
+				<a href="generalInfo.html#familyInfo"><h3>Stockton Family Law Courthouse</h3></a>
 				<br/><br/>
 				<u>Physical Address:</u><br/>
 				540 E. Main Street<br/>
@@ -274,7 +275,7 @@
 			
 			<div data-role="popup" id="lodiPopup" class="ui-content">
 				<div style="padding: 10px;">
-				<h3>Stockton Courthouse</h3>
+				<h3>Lodi Courthouse</h3>
 				<br/>
 				<p><b>The Lodi Branch of the Superior Court is located in two buildings.</b></p>
 				<br/><br/>
@@ -346,11 +347,5 @@
 			</div>
 		</div>
 		
-		<div data-role="page" id="stocktonInfo">
-			<div data-role="content" data-theme="a">
-				Test
-				<a href="#home-page">Home</a>
-			</div>
-		</div>
-    </body>
+	</body>
 </html>

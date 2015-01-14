@@ -11,4 +11,5 @@ $(function() {
 			$( "#left-panel" ).panel( "open" );
 		//}
 	});
+	
 });

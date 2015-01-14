@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+		
+		<title>SCSJC App</title>
+		
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script type="text/javascript" src="js/app.js"></script>
+    </head>
+	
+	<body>
+		<!-- header -->
+		<div data-id="headerWrap" class="header-bar" data-role="header" role="banner" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+			<h1 style="text-align:left;margin: 0 auto;">The Superior Court of California<br />County of San Joaquin</h1>
+		</div>
+		
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
+			<a href="#left-panel" data-theme="a">left-sidebar</a>
+		</div>
+		
+		<!-- sidebar -->
+		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">			
+			<ul data-role="listview">
+				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+				<li><a href="index.html" data-ajax="false">Home</a></li>
+				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
+				<li><a href="index.html#stocktonInfo">Test</a></li>
+				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
+				
+				<div data-role="collapsible" data-iconpos="right" data-corners="false">
+					<h2 data-role="list-divider">Online Services</h2>
+					<ul data-role="listview">
+						<li><a href="#">Test 1</a></li>
+						<li><a href="#">Test 2</a></li>
+						<li><a href="#">Test 3</a></li>
+						<li><a href="#">Test 4</a></li>
+					</ul>
+				</div>
+			</ul>
+			
+		</div>
+		
+		<!-- General INfomation -->
+		<div data-role="page" id="generalInfo-page" data-theme="a">
+			<div data-role="content" data-theme="a" style="padding:0.5em;">
+				<h1>General Information</h1>
+				<hr>
+				<h2>Court Locations, Hours & Contact Information</h2>
+				<br />
+				<a href="#stocktonInfo">Stockton Courthouse</a><br/>
+				<a href="#familyInfo">Stockton Family Law Courthouse</a><br/>
+				<a href="#juvenileInfo">Juvenile Justice Center</a><br/>
+				<a href="#lodiInfo">Lodi Branch</a><br/>
+				<a href="#mantecaInfo">Manteca Branch</a><br/>
+				<a href="tracyInfo">Tracy Branch (Closed effective 10/3/11)</a><br/>
+				<br/><u>Holiday Hours & Holiday Schedule</u>
+				<hr>
+				<h2>About San Joaquin County Superior Court</h2>
+				<hr>
+				<p style="margin:0in;margin-bottom:.0001pt;line-height:13.5pt"><span style="font-size: 9pt; font-family: Arial, sans-serif;">The California Constitution provides for a system of courts. The Superior Court serves all of the citizens of San Joaquin County as the general trial court. The Superior Court has jurisdiction over all felonies, misdemeanors, civil cases of all amounts, small claims, traffic, cases involving title and possession of real property, dissolution of marriage and child custody, probate, conservatorship, mental health, and juvenile proceedings. These proceedings are conducted at the Stockton Courthouse, Juvenile Justice Center in French Camp, and branch court in Manteca.<o:p></o:p></span></p>
+				<p style="margin:0in;margin-bottom:.0001pt;line-height:13.5pt"><span style="font-size: 9pt; font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 9pt; line-height: 13.5pt;">In 2001, San Joaquin County Superior Court received the prestigious Ralph N. Kleps Award for its Court-Community Leadership and Liaison Program. San Joaquin County Superior Court was also a Ralph N. Kleps Award recipient in 2000 for its innovative Jury Duty Compliance Program.</span></p>
+				<p style="margin:0in;margin-bottom:.0001pt;line-height:13.5pt"><span style="font-size: 9pt; font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 9pt; line-height: 13.5pt;">The annual award, instituted in 1991, is given in recognition of innovative state court programs and is named for California's first Administrative Director for the Courts, Ralph N. Kleps.</span></p>
+			</div>
+		</div>
+		
+		
+		<!-- Page Stockton Contact page -->
+		<!-- Directions -->
+		<div data-role="page" id="stocktonInfo">
+			<div data-role="content" style="padding:0.5em;">
+				<center><h1>Stockton Courthouse</h1></center>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#stocktonInfo" data-role="tab" class="ui-btn-active ui-state-persist">Directions</a></li>
+						<li><a href="#stocktonPhone" data-role="tab">Phone Numbers</a></li>
+						<li><a href="#stocktonHours" data-role="tab">Hours of Operations</a></li>
+					</ul>
+				</div><!-- /navbar -->
+				<p>Beginning Monday, December 23, 2013, court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side (San Joaquin Street side) of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse. Additionally, pedestrian access to the courthouse has been rerouted. Please read this PUBLIC NOTICE to view a map of the detour.</p>
+				
+				<u>Physical Address:</u><br/>
+				222 E. Weber Avenue<br/>
+				Stockton, California 95202<br/>
+				<br/>
+				<u>Mailing Address:</u><br/>
+				Superior Court of California, County of San Joaquin<br/>
+				PO Box 201022<br/>
+				Stockton, California 95201<br/>
+				<br/>
+				<u><h3>Directions:</h3></u>
+				<i><h4>From I-5 North</h4></i>
+				<ol>
+				  <li>Take exit toward Downtown Stockton</li>
+				  <li>Merge onto E. Lafayette St.</li>
+				  <li>Turn left onto El Dorado St.</li>
+				  <li>Turn right onto E. Weber Ave. (courthouse on right)</li>
+				</ol>
+				
+				<i><h4>From I-5 South</h4></i>
+				<ol>
+				  <li>Take the State Hwy 4 E exit toward Downtown Stockton/Fresno Ave.</li>
+				  <li>Follow signs for CA-4 E/CA-99/Downtown/Stockton</li>
+				  <li>Keep right at fork, follow signs for Downtown Stockton and merge onto E. Lafayette St.</li>
+				  <li>Turn left onto El Dorado St.</li>
+				  <li>Turn right onto E. Weber Ave. (courthouse on right)</li>
+				</ol>
+				
+				<i><h4>From CA-99 North or South</h4></i>
+				<ol>
+				  <li>Take the CA-4W exit toward I-5/Downtown Stockton</li>
+				  <li>Take El Dorado St. exit toward Center St./Downtown</li>
+				  <li>Turn right onto El Dorado St.</li>
+				  <li>Turn right onto E. Weber Ave. (courthouse on right) </li>
+				</ol>
+				<u><h3>Parking:</h3></u>
+				<p>Parking is available in metered spaces around the Courthouse . Parking garages are available directly to the north, east, and west of the courthouse. There is an hourly fee and parking garage attendants accept cash only. The 'P' on the map above indicates the location of a parking garage.</p>
+					<a href="#home-page">Home</a>
+			</div>
+		</div>
+		
+		<!-- Phone Numbers -->
+		<div data-role="page" id="stocktonPhone" style="padding:0.5em;">
+			<div data-role="content">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#stocktonInfo" data-role="tab">Directions</a></li>
+						<li><a href="#stocktonPhone" data-role="tab" class="ui-btn-active ui-state-persist">Phone Numbers</a></li>
+						<li><a href="#stocktonHours" data-role="tab">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			
+			<br/><h3><u><strong>Telephone Numbers</strong></u></h3>
+			<p>*All telephone numbers use 209 area code, unless listed otherwise. &nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;</span></span></span></p>
+			<p>&nbsp;992-5522 &nbsp; Civil Limited</p>
+			<p>&nbsp;992-5522 &nbsp; Small Claims</p>
+			<p>&nbsp;992-5521 &nbsp; Criminal</p>
+			<p>&nbsp;992-5522 &nbsp; Domestic Violence</p>
+			<p>&nbsp;992-5522 &nbsp; Unlawful Detainer (Landlord-Tenant)</p>
+			<p>&nbsp;992-5521 &nbsp; Passports</p>
+			<p>&nbsp;992-5500 &nbsp; Jury Services</p>
+			<p>(877) 872-0476&nbsp;&nbsp; Traffic</p>
+			</div>	
+		</div>
+		
+		<!-- Hours -->
+		<div data-role="page" id="stocktonHours" style="padding:0.5em;">
+			<div data-role="content">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#stocktonInfo" >Directions</a></li>
+						<li><a href="#stocktonPhone">Phone Numbers</a></li>
+						<li><a href="#stocktonHours" class="ui-btn-active ui-state-persist">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			
+			<h3><u><strong>Business hours</strong></u></h3>
+				<p><span><span>Business hours Monday through Friday, excluding <a href="/general-info/court-locations-hours-contact-information/hours-operation-holiday-schedule">legal holidays</a> are as follows:</span></span></p>
+				<p><span><span><u>Clerk's Office</u>:&nbsp; 8:00 a.m. to 3:00 p.m. </span></span></p>
+				<p><span><span><u>Telephone</u>:&nbsp; 8:00 a.m. to 4:00 p.m.&nbsp; </span></span></p>
+				<p><span><u>Drop Box</u>: 8:00 a.m. to 5:00 p.m.<span style="display: none">&nbsp;</span></span></p>
+				<p><span><u>Courtroom</u>:&nbsp; Generally begin at 8:30 a.m. and conclude by 4:30 p.m.</span></p>
+			</div>	
+		</div>
+		
+		<!-- Page Stockton Family Law Contact page -->
+		<!-- Directions -->
+		<div data-role="page" id="familyInfo" class="ui-content">
+			<div data-role="content" style="padding:0.5em;">
+				<center><h1>Stockton Family Law Courthouse</h1></center>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#familyInfo" class="ui-btn-active ui-state-persist">Directions</a></li>
+						<li><a href="#familyPhone">Phone Numbers</a></li>
+						<li><a href="#familyHours">Hours of Operations</a></li>
+					</ul>
+				</div><!-- /navbar -->
+				<p>Beginning Monday, December 23, 2013, court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side (San Joaquin Street side) of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse. Additionally, pedestrian access to the courthouse has been rerouted. Please read this PUBLIC NOTICE to view a map of the detour.</p>
+				
+				<u>Physical Address:</u><br/>
+				540 E. Main Street<br/>
+				Stockton, California 95202<br/>
+				<br/>
+				<u><h3>Directions:</h3></u>
+				<i><h4>From I-5 North or South</h4></i>
+				<ol>
+				  <li>Take the State Hwy 4 E exit toward Downtown Stockton/Fresno Ave.</li>
+				  <li>Follow signs for CA-4 E/CA-99/Downlaod /Stockton and merage onto CA-4E</li>
+				  <li>Take Stanislaus ST. exit toward Downtown Stockton</li>
+				  <li>Thurn left onto S. Stanislaus St.</li>
+				  <li>Turn left onto E Main Street (courthouse on left)</li>
+				</ol>
+				
+				<i><h4>From CA-99 North or South</h4></i>
+				<ol>
+				  <li>Take the CA-4W exit toward 1-5/Downtown Stockton/San Francisco</li>
+				  <li>Take Stanislaus exit toward Downtown Stockton</li>
+				  <li>Turn right onto S. Stanislaus</li>
+				  <li>Turn left onto E. Main Street (courthouse on left)</li>
+				</ol>
+				<u><h3>Parking:</h3></u>
+				<p>Metered parking is available along the streets.  Public parking garages are also avalable. </p>
+					<a href="#home-page">Home</a>
+		</div>
+		</div>
+		
+		<!-- Phone Numbers -->
+		<div data-role="page" id="familyPhone" style="padding:0.5em;">
+			<div data-role="content">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#familyInfo">Directions</a></li>
+						<li><a href="#familyPhone" class="ui-btn-active ui-state-persist">Phone Numbers</a></li>
+						<li><a href="#familyHours">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			<h3><u><strong>Telephone Numbers</strong></u></h3>
+			<p>*All telephone numbers use 209 area code, unless listed otherwise.<span style="display: none">&nbsp;<span style="display: none">&nbsp;</span></span></p>
+			<p>992-5555&nbsp;&nbsp;&nbsp;&nbsp;Information</p>
+			<p>992-5283 &nbsp; &nbsp;Facilitator-Pro Per Clinic</p>
+			<p>992-5690 &nbsp; &nbsp;Family Law Services</p>
+		</div>	
+		</div>
+		
+		<!-- Hours -->
+		<div data-role="page" id="familyHours" style="padding:0.5em;">
+			<div data-role="content">
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#familyInfo" >Directions</a></li>
+						<li><a href="#familyPhone">Phone Numbers</a></li>
+						<li><a href="#familyHours" class="ui-btn-active ui-state-persist">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			
+			<h3><u><strong>Business hours</strong></u></h3>
+			<p>Business hours Monday through Friday, excluding <a href="/general-info/court-locations-hours-contact-information/hours-operation-holiday-schedule">legal holidays</a> are as follows:</span></span></p>
+			<p><u>Clerk's Office</u>:&nbsp; 8:00 a.m. to 3:00 p.m.</p>
+			<p><u>Telephone</u>:&nbsp; 8:00 a.m. to 4:00 p.m.&nbsp;</p>
+			<p><u>Drop Box</u>: 8:00 a.m. to 4:00 p.m.&nbsp;</p>
+			<p><u>Courtroom</u>:&nbsp; Generally begin at 8:15 a.m. and conclude by 4:30 p.m.&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>	
+		</div>
+		
+		<!-- Page Juvenile Justice Contact page -->
+		<!-- Directions -->
+		<div data-role="page" id="juvenileInfo" class="ui-content">
+			<div data-role="content" style="padding:0.5em;">
+				<center><h1>Juvenile Justice Center</h1></center>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#juvenileInfo" class="ui-btn-active ui-state-persist">Directions</a></li>
+						<li><a href="#juvenilePhone">Phone Numbers</a></li>
+						<li><a href="#juvenileHours">Hours of Operations</a></li>
+					</ul>
+				</div><!-- /navbar -->
+				<p>Beginning Monday, December 23, 2013, court users must enter the Stockton Courthouse (located at 222 E. Weber Avenue) on the east side (San Joaquin Street side) of the building. The entrance on the west side of the courthouse will be closed due to construction of the new Stockton Courthouse. Additionally, pedestrian access to the courthouse has been rerouted. Please read this PUBLIC NOTICE to view a map of the detour.</p>
+				
+				<u>Physical Address:</u><br/>
+				535 West Mathews Road<br/>
+				French Camp, California 95231<br/>
+				<br/>
+				<u>Mailing Address:</u><br/>
+				San Joaquin County Superior Court - Juvenile Division<br/>
+				535 West Mathews Road<br/>
+				French Camp, California 95231<br/>
+				<br/>
+				<u><h3>Directions:</h3></u>
+				<p>The Juvenile Justice Center is located with the Juvenile Probation Department in French Camp on Mathews Road. From I-5 North or South, take the Mathews Road exit and head west approximately 1/2 mile and the Juvenile Justice Center is on the north side of Mathews Road. Departments J-1 and J-2 and the administrative support staff are located in this building.</p>
+				<u><h3>Parking:</h3></u>
+				<p>There is free parking in the lot adjacent to the building </p>
+					<a href="#home-page">Home</a>
+		</div>
+		</div>
+		
+		<!-- Phone Numbers -->
+		<div data-role="page" id="juvenilePhone" style="padding:0.5em;">
+			<div data-role="content">
+			<center><h1>Juvenile Justice Center</h1></center>
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#juvenileInfo">Directions</a></li>
+						<li><a href="#juvenilePhone" class="ui-btn-active ui-state-persist">Phone Numbers</a></li>
+						<li><a href="#juvenileHours">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			<h3><u><strong>Telephone Numbers</strong></u></h3>
+			<p>&nbsp;*All telephone numbers use 209 area code, unless listed otherwise.</p>
+			<p>992-5698 &nbsp; &nbsp; Clerk's Office</p>
+		</div>	
+		</div>
+		
+		<!-- Hours -->
+		<div data-role="page" id="juvenileHours" style="padding:0.5em;">
+			<div data-role="content">
+			<center><h1>Juvenile Justice Center</h1></center>
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#juvenileInfo" >Directions</a></li>
+						<li><a href="#juvenilePhone">Phone Numbers</a></li>
+						<li><a href="#juvenileHours" class="ui-btn-active ui-state-persist">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			
+			<h3><u><strong>Business hours</strong></u></h3>
+			<p>Business hours Monday through Friday, excluding <a href="/general-info/court-locations-hours-contact-information/hours-operation-holiday-schedule">legal holidays</a> are as follows:</span></p>
+			<p><u>Clerk's Office</u>:&nbsp; 8:00 a.m. to 3:00 p.m.</p>
+			<p><u>Telephone</u>:&nbsp; 8:00 a.m. to 4:00 p.m.&nbsp;</p>
+			<p><u>Drop Box</u>: 8:00 a.m. to 4:00 p.m.&nbsp;</p>
+			<p><u>Courtroom</u>:&nbsp; Generally begin at 8:15 a.m. and conclude by 4:30 p.m.&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>	
+		</div>
+		
+		<!-- Page Lodi Branch Contact page -->
+		<!-- Directions -->
+		<div data-role="page" id="lodiInfo" class="ui-content">
+			<div data-role="content" style="padding:0.5em;">
+				<center><h1>Lodi Branch</h1></center>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#lodiInfo" class="ui-btn-active ui-state-persist">Directions</a></li>
+						<li><a href="#lodiPhone">Phone Numbers</a></li>
+						<li><a href="#lodiHours">Hours of Operations</a></li>
+					</ul>
+				</div><!-- /navbar -->
+				<p><b>The Lodi Branch of the Superior Court is located in two buildings.</b></p>
+				<br/>
+				<u>Physical Address for Department L-1:</u><br/>
+				217 W. Elm Street (2nd Floor)<br/>
+				Lodi, California 95240<br/>
+				<br/>
+				<u>Physical Address for Department L-2:</u><br/>
+				315 W. Elm Street<br/>
+				Lodi, California 95240<br/>
+				<u>Mailing Address:</u><br/>
+				Superior Court of California, Lodi Branch<br/>
+				315 W. Elm Street<br/>
+				Lodi, California 95240<br/>
+				<br/>
+				<u><h3>Directions:</h3></u>
+				<p>From I-5 North or South, take the Kettleman Lane/Highway 12 exit and head east approximately 5 miles to Lodi. Turn north at Church Street and proceed north to Elm Street. Turn west on Elm Street to the courthouse locations. From 99 North or South, take the Kettleman Lane/Highway 12 exit and head west.. Turn north at Church Street and proceed north to Elm Street. Turn west on Elm Street to the courthouse locations.</p>
+				<u><h3>Parking:</h3></u>
+				<p>There is free parking in the lot across the street fromc the building housing Department L-2.</p>
+					<a href="#home-page">Home</a>
+		</div>
+		</div>
+		
+		<!-- Phone Numbers -->
+		<div data-role="page" id="lodiPhone" style="padding:0.5em;">
+			<div data-role="content">
+			<center><h1>Lodi Branch</h1></center>
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#lodiInfo">Directions</a></li>
+						<li><a href="#lodiPhone" class="ui-btn-active ui-state-persist">Phone Numbers</a></li>
+						<li><a href="#lodiHours">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			<h3><u><strong>Telephone Numbers</strong></u></h3>
+			<p>*All telephone numbers use 209 area code, unless listed otherwise. &nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;</span></span></span></p>
+			<p>&nbsp;992-5522 &nbsp; Civil Limited</p>
+			<p>&nbsp;992-5522 &nbsp; Small Claims</p>
+			<p>&nbsp;992-5521 &nbsp; Criminal</p>
+			<p>&nbsp;992-5522 &nbsp; Domestic Violence</p>
+			<p>&nbsp;992-5522 &nbsp; Unlawful Detainer (Landlord-Tenant)</p>
+			<p>&nbsp;992-5521 &nbsp; Passports</p>
+			<p>&nbsp;992-5500 &nbsp; Jury Services</p>
+			<p>(877) 872-0476&nbsp;&nbsp; Traffic</p>
+		</div>	
+		</div>
+		
+		<!-- Hours -->
+		<div data-role="page" id="lodiHours" style="padding:0.5em;">
+			<div data-role="content">
+			<center><h1>Lodi Branch</h1></center>
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#lodiInfo" >Directions</a></li>
+						<li><a href="#lodiPhone">Phone Numbers</a></li>
+						<li><a href="#lodiHours" class="ui-btn-active ui-state-persist">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			
+			<h3><u><strong>Business hours</strong></u></h3>
+			<p><span style="color: black; font-family: arial, sans-serif; font-size: 9pt;">Business hours Monday through Friday, excluding </span><a href="/general-info/court-locations-hours-contact-information/hours-operation-holiday-schedule" style="font-family: arial, sans-serif; font-size: 9pt;">legal holidays</a><span style="color: black; font-family: arial, sans-serif; font-size: 9pt;"> are as follows:</span></p>
+			<p><u>Clerk's Office</u>:&nbsp; 8:00 a.m. to 3:00 p.m. </p>
+			<p><u>Telephone</u>:&nbsp; 8:00 a.m. to 4:00 p.m.&nbsp; </p>
+			<p><u>Drop Box</u>: 8:00 a.m. to 5:00 p.m.</p>
+			<p><u>Courtroom</u>:&nbsp; Generally begin at 8:30 a.m. and conclude by 4:30 p.m.</p>
+		</div>	
+		</div>
+		
+		<!-- Page manteca Branch Contact page -->
+		<!-- Directions -->
+		<div data-role="page" id="mantecaInfo" class="ui-content">
+			<div data-role="content" style="padding:0.5em;">
+				<center><h1>Manteca Branch</h1></center>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#mantecaInfo" class="ui-btn-active ui-state-persist">Directions</a></li>
+						<li><a href="#mantecaPhone">Phone Numbers</a></li>
+						<li><a href="#mantecaHours">Hours of Operations</a></li>
+					</ul>
+				</div><!-- /navbar -->
+				<p><b>The Lodi Branch of the Superior Court is located in two buildings.</b></p>
+				<br/>
+				<u>Physical Address:</u><br/>
+				315 E. Center Street<br/>
+				Manteca, California 95336<br/>
+				<br/>
+				<u>Mailing Address:</u><br/>
+				Superior Court of California, County of San Joaquin<br/>
+				Manteca Branch<br/>
+				315 E. Center St<br/>
+				Manteca, California 95336<br/>
+				<br/>
+				<u><h3>Directions:</h3></u>
+				<p>From 99 North or South, take Highway 120 West and take the Main Street Exit. Proceed north to Center Street. Turn east on Center Street and proceed three blocks to the Courthouse. From I-5 North or South, take Highway 120 east and take the Main Street Exit. Proceed north to Center Street. Turn east on Center Street and proceed three blocks to the Courthouse.</p>
+				<u><h3>Parking:</h3></u>
+				<p>There is free parking around the courthouse and in a lot to the north.</p>
+					<a href="#home-page">Home</a>
+		</div>
+		</div>
+		
+		<!-- Phone Numbers -->
+		<div data-role="page" id="mantecaPhone" style="padding:0.5em;">
+			<div data-role="content">
+			<center><h1>Manteca Branch</h1></center>
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#mantecaInfo">Directions</a></li>
+						<li><a href="#mantecaPhone" class="ui-btn-active ui-state-persist">Phone Numbers</a></li>
+						<li><a href="#mantecaHours">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			<h3><u><strong>Telephone Numbers</strong></u></h3>
+			<p>*All telephone numbers use 209 area code, unless listed otherwise.</p>
+			<p>&nbsp;239-1316&nbsp;&nbsp;&nbsp; Criminal</p>
+			<p>&nbsp;239-1316 &nbsp;Traffic</p>
+			<p>&nbsp;239-9188&nbsp;&nbsp;&nbsp; Civil Harassment</p>
+			<p>&nbsp;239-9188&nbsp;&nbsp;&nbsp; Unlawful Detainer (Landlord-Tenant)</p>
+			<p>&nbsp;992-5555 &nbsp; &nbsp;Passports (Processed at Main Stockton Court only.)</p>
+		</div>	
+		</div>
+		
+		<!-- Hours -->
+		<div data-role="page" id="mantecaHours" style="padding:0.5em;">
+			<div data-role="content">
+			<center><h1>Manteca Branch</h1></center>
+			<div data-role="navbar">
+					<ul>
+						<li><a href="#mantecaInfo" >Directions</a></li>
+						<li><a href="#mantecaPhone">Phone Numbers</a></li>
+						<li><a href="#mantecaHours" class="ui-btn-active ui-state-persist">Hours of Operations</a></li>
+					</ul>
+			</div><!-- /navbar -->
+			
+			<h3><u><strong>Business hours</strong></u></h3>
+			<p>>Business hours Monday through Friday, excluding<a href="/general-info/court-locations-hours-contact-information/hours-operation-holiday-schedule" style="font-family: arial, sans-serif; font-size: 9pt;">legal holidays</a> are as follows:</p>
+			<p><u>Clerk's Office</u>:&nbsp; 8:00 a.m. to 3:00 p.m. </p>
+			<p><u>Telephone</u>:&nbsp; 8:00 a.m. to 4:00 p.m.&nbsp; </p>
+			<p><u>Drop Box</u>: 8:00 a.m. to 5:00 p.m.</p>
+			<p><u>Courtroom</u>:&nbsp; Generally begin at 8:30 a.m. and conclude by 4:30 p.m.</p>
+		</div>	
+		</div>
+		
+    </body>
+</html>
