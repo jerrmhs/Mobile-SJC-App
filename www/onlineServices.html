@@ -62,114 +62,15 @@
 		
 		<!-- sidebar -->
 		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-			<!--
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-iconpos="right">
-					<h1>Online Services</h1>
-					<ul>
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
-			
-				<div data-role="collapsible" data-iconpos="right">
-					<h3>Test</h3>
-					<ul>
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
-			
-				<div data-role="collapsible" data-icon="arrow-r" data-iconpos="right">
-					<h1 style="margin-top: 0px !important;margin-bottom: -.5px !important;">Add Map</h1>
-                    <ul data-role="listview" data-inset="false" data-divider-theme="a">                
-                        <li>
-                            <a href="" data-transition="slide" data-native-menu = "false">By ZipCode</a>
-                        </li>
-                        <li>
-                            <a href="" data-transition="slide" data-native-menu = "false">By Street #</a>
-                        </li>
-                    </ul>
-				</div>
-			</div>
-			-->
-			
-			<!--
-			<ul data-role="listview" class="ui-listview-outer">
-				<!-- regular link
-				<li><a href="#">Home</a></li>
-				
-				<!-- collapsible link
-				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" >
-					<h2>Online Services</h2>
-					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
-						<li><a href="#">Traffic Payments Online</a></li>
-						<li><a href="#">Probate Notes</a></li>
-						<li><a href="#">Family Law, Criminal, Traffic</a></li>
-						<li><a href="#">Family Law, Tentative Rulings</a></li>
-						<li><a href="#">Civil, Small Claims, Probate</a></li>
-					</ul>
-				</li>
-				
-				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
-					<h2>Fish</h2>
-					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
-						<li><a href="#">Salmon</a></li>
-						<li>Pollock</li>
-						<li>Trout</li>
-					</ul>
-				</li>
-			</ul>
-			 -->
-			
-			<!--
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-				<div data-role="collapsible-set">
-				
-					<div data-role="collapsible" data-iconpos="right">
-						<h1>Online Services</h1>
-						<ul>
-							<li><a href="#">Test 1</a></li>
-						</ul>
-					</div>
-
-					<div data-role="collapsible" data-iconpos="right">
-						<h3>Test</h3>
-						<ul>
-							<li><a href="#">Test 1</a></li>
-						</ul>
-					</div>
-					
-				</div>
-			</ul>
-			-->
-			
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+			<ul data-role="listview" class="sidebar">
+				<li data-role="list-divider" id="left-panel-img"></li>
 				<li><a href="index.html" data-ajax="false">Home</a></li>
-				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
-				<li><a href="index.html#stocktonInfo">Test</a></li>
-				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
-				
-				<div data-role="collapsible" data-iconpos="right" data-corners="false">
-					<h2 data-role="list-divider">Online Services</h2>
-					<ul data-role="listview">
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
+				<li><a href="onlineServices.html" data-ajax="false">Online Services</a></li>
+				<li><a href="generalInfo.html" data-ajax="false">General Info</a></li>
 			</ul>
-			
 		</div>
 	
-		<!-- Home -->
+		<!-- online page -->
 		<div data-role="page" id="online-page" data-theme='a'>
 			<div data-role="content" data-theme='a' style="padding:0.5em;">
 				<h2>Online Services</h2>
@@ -182,20 +83,11 @@
 				<a href="#juryStatus" data-role="buttion" class="ui-btn">Get Jury Status</a>
 				<a href="#juryOpt" data-role="buttion" class="ui-btn">Jury Opt In/Out</a>
 				<a href="geo:37.786971,-122.399677;u=35">open map</a>
-				<a href="geo:38.897096,-77.036545">open map</a>
+				<a href="geo:37.953483, -121.287759">open map</a>
 				
 				
 			</div>
 			
-		</div>
-		
-		
-		<!-- Page 2 -->
-		<div data-role="page" id="page2">
-			<div data-role="content" data-theme="a">
-				Test
-				<a href="#home-page">Home</a>
-			</div>
 		</div>
 		
 		<!-- Jury Status -->
@@ -210,47 +102,45 @@
 				<p>Being on "stand-by" or "on-call" jury service may not suit your schedule. If this is the case, please call (209) 992-5500 so that jury staff can work with your schedule to arrange for a specific date for you to report for jury service.</p>
 
 
-				<table bgcolor="#eef0f2" border="0" cellspacing="2" columnheaders="False" id="RecordCountDataGrid1" rules="all" width="100%">
+				<table bgcolor="#eef0f2" border="0" cellspacing="2" columnheaders="False" id="" rules="all" width="100%">
 					<tbody>
 						<tr>
 							<td>
-
-
-				<table border="1" bordercolor="black" width="100%" align="center">
-					<tbody>
-						<tr>
-							<td align="center"><b>THE WEEK OF: Monday, January 12, 2015</b>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<p></p>
-				<center>Last updated on Wednesday, January 14, 2015 15:39:14.</center>
-				<p></p>
-				<center>Note: This page is updated by 5:00 p.m. every day except on court holidays and weekends.</center>
-				<p></p>
-				<table align="center" width="100%" border="1" bordercolor="black">
-					<tbody>
-						<tr>
-							<td width="50%" align="center"><b>Group Number(s)</b>
-								</td>
-								<td align="center"><b>Instructions</b>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<center>119 through 130</center>
-								</td>
-								<td>You are to check this website on Thursday, January 15, 2015 after 5:00 p.m. for further instructions. Thank you.</td>
-							</tr>
-							<tr>
-								<td>
-									<center>Please be sure you are ONLY checking this website if you are summoned for the week of 1/12/2015. Otherwise the information will not be correct.</center>
-								</td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
+								<table border="1" bordercolor="black" width="100%" align="center">
+									<tbody>
+										<tr>
+											<td align="center"><b>THE WEEK OF: Monday, January 12, 2015</b>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p></p>
+								<center>Last updated on Wednesday, January 14, 2015 15:39:14.</center>
+								<p></p>
+								<center>Note: This page is updated by 5:00 p.m. every day except on court holidays and weekends.</center>
+								<p></p>
+								<table align="center" width="100%" border="1" bordercolor="black">
+									<tbody>
+										<tr>
+											<td width="50%" align="center"><b>Group Number(s)</b>
+												</td>
+												<td align="center"><b>Instructions</b>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<center>119 through 130</center>
+												</td>
+												<td>You are to check this website on Thursday, January 15, 2015 after 5:00 p.m. for further instructions. Thank you.</td>
+											</tr>
+											<tr>
+												<td>
+													<center>Please be sure you are ONLY checking this website if you are summoned for the week of 1/12/2015. Otherwise the information will not be correct.</center>
+												</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
 							</td>
 						</tr>
 					</tbody>
