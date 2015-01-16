@@ -25,7 +25,8 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		
 		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
@@ -62,111 +63,17 @@
 		
 		<!-- sidebar -->
 		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
-			<!--
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-iconpos="right">
-					<h1>Online Services</h1>
-					<ul>
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
-			
-				<div data-role="collapsible" data-iconpos="right">
-					<h3>Test</h3>
-					<ul>
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
-			
-				<div data-role="collapsible" data-icon="arrow-r" data-iconpos="right">
-					<h1 style="margin-top: 0px !important;margin-bottom: -.5px !important;">Add Map</h1>
-                    <ul data-role="listview" data-inset="false" data-divider-theme="a">                
-                        <li>
-                            <a href="" data-transition="slide" data-native-menu = "false">By ZipCode</a>
-                        </li>
-                        <li>
-                            <a href="" data-transition="slide" data-native-menu = "false">By Street #</a>
-                        </li>
-                    </ul>
-				</div>
-			</div>
-			-->
-			
-			<!--
-			<ul data-role="listview" class="ui-listview-outer">
-				<!-- regular link
-				<li><a href="#">Home</a></li>
-				
-				<!-- collapsible link
-				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" >
-					<h2>Online Services</h2>
-					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
-						<li><a href="#">Traffic Payments Online</a></li>
-						<li><a href="#">Probate Notes</a></li>
-						<li><a href="#">Family Law, Criminal, Traffic</a></li>
-						<li><a href="#">Family Law, Tentative Rulings</a></li>
-						<li><a href="#">Civil, Small Claims, Probate</a></li>
-					</ul>
-				</li>
-				
-				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
-					<h2>Fish</h2>
-					<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
-						<li><a href="#">Salmon</a></li>
-						<li>Pollock</li>
-						<li>Trout</li>
-					</ul>
-				</li>
-			</ul>
-			 -->
-			
-			<!--
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
-				<div data-role="collapsible-set">
-				
-					<div data-role="collapsible" data-iconpos="right">
-						<h1>Online Services</h1>
-						<ul>
-							<li><a href="#">Test 1</a></li>
-						</ul>
-					</div>
-
-					<div data-role="collapsible" data-iconpos="right">
-						<h3>Test</h3>
-						<ul>
-							<li><a href="#">Test 1</a></li>
-						</ul>
-					</div>
-					
-				</div>
-			</ul>
-			-->
-			
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+			<ul data-role="listview" class="sidebar">
+				<li data-role="list-divider" id="left-panel-img"></li>
 				<li><a href="index.html" data-ajax="false">Home</a></li>
-				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
-				<li><a href="index.html#stocktonInfo">Test</a></li>
-				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
-				
-				<div data-role="collapsible" data-iconpos="right" data-corners="false">
-					<h2 data-role="list-divider">Online Services</h2>
-					<ul data-role="listview">
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
+				<li data-icon="false"><a>Online Services</a></li>
+				<ul data-role="listview">
+					<li><a href="#">Pay Traffic Ticket</a></li>
+					<li><a href="#">Get Jury Status</a></li>
+					<li><a href="#">Juror Notification Service</a></li>
+				</ul>
+				<li><a href="generalInfo.html" data-ajax="false">General Info</a></li>
 			</ul>
-			
 		</div>
 	
 		<!-- Home -->
