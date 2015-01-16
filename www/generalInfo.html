@@ -54,33 +54,29 @@
 		</div>
 		
 		<!-- footer -->
+		<!--
 		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
 			<a href="#left-panel" data-theme="a">left-sidebar</a>
 		</div>
+		-->
 		
 		<!-- sidebar -->
-		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">			
-			<ul data-role="listview">
-				<li data-role="list-divider" style="height:10em;" id="left-panel-img"></li>
+		<div data-role="panel" data-display="push" id="left-panel" data-theme="a">
+			<ul data-role="listview" class="sidebar">
+				<li data-role="list-divider" id="left-panel-img"></li>
 				<li><a href="index.html" data-ajax="false">Home</a></li>
-				<li><a href="online-services.html" data-ajax="false">Online Services</a></li>
-				<li><a href="index.html#stocktonInfo">Test</a></li>
-				<li><a href="generalInfo.html" data-ajax="false">General Information</a></li>
-				
-				<div data-role="collapsible" data-iconpos="right" data-corners="false">
-					<h2 data-role="list-divider">Online Services</h2>
-					<ul data-role="listview">
-						<li><a href="#">Test 1</a></li>
-						<li><a href="#">Test 2</a></li>
-						<li><a href="#">Test 3</a></li>
-						<li><a href="#">Test 4</a></li>
-					</ul>
-				</div>
+				<li><a href="onlineServices.html" data-ajax="false">Online Services</a></li>
+				<li data-icon="false"><a>General Info</a></li>
+				<ul data-role="listview">
+					<li><a href="#">Court Locations and Contact Information</a></li>
+					<li><a href="#">Jury Service</a></li>
+					<li><a href="#">Traffic</a></li>
+					<li><a href="#">Employment</a></li>
+				</ul>
 			</ul>
-			
 		</div>
 		
-		<!-- General INfomation -->
+		<!-- General Information -->
 		<div data-role="page" id="generalInfo-page" data-theme="a">
 			<div data-role="content" data-theme="a" style="padding:0.5em;">
 				<h1>General Information</h1>
