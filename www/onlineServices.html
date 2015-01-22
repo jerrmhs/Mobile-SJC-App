@@ -57,8 +57,8 @@
 		</div>
 		
 		<!-- footer -->
-		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b" style="padding:0 0.25em;">
-			<a href="#left-panel" data-theme="a">left-sidebar</a>
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="a" style="padding:0 0.25em;">
+			<a href="#left-panel" data-theme="a" class="ui-btn ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Side Bar</a>
 		</div>
 		
 		<!-- sidebar -->
@@ -66,18 +66,22 @@
 			<ul data-role="listview" class="sidebar">
 				<li data-role="list-divider" id="left-panel-img"></li>
 				<li><a href="index.html" data-ajax="false">Home</a></li>
+<<<<<<< HEAD
 				<li data-icon="false"><a>Online Services</a></li>
 				<ul data-role="listview">
 					<li><a href="#">Pay Traffic Ticket</a></li>
 					<li><a href="#">Get Jury Status</a></li>
 					<li><a href="#">Juror Notification Service</a></li>
 				</ul>
+=======
+				<li><a href="onlineServices.html" data-ajax="false">Online Services</a></li>
+>>>>>>> 1bf8759a3f842f9fc391f703cb82db758ba604fd
 				<li><a href="generalInfo.html" data-ajax="false">General Info</a></li>
 			</ul>
 		</div>
 	
-		<!-- Home -->
-		<div data-role="page" id="home-page" data-theme='a'>
+		<!-- online page -->
+		<div data-role="page" id="online-page" data-theme='a'>
 			<div data-role="content" data-theme='a' style="padding:0.5em;">
 				<h2>Online Services</h2>
 				<p>Please note: The information on this site is provided to increase public access to your local courts. We make every attempt to keep the information current but that is not always possible. The information contained here does not constitute the official record of the court and may contain errors or omissions. By selecting an option below, you signify that you have read the foregoing.</p><br />
@@ -87,18 +91,73 @@
 				
 				<a href="https://www.paybill.com/sjcourt/" data-ajax="false" data-role="buttion" class="ui-btn">Pay Traffic Tickets/Fines</a>
 				<a href="#juryStatus" data-role="buttion" class="ui-btn">Get Jury Status</a>
-				<a href="#juryOpt" data-role="buttion" class="ui-btn">Jury Opt In/Out</a>
-				<a onclick="navigator.app.loadUrl('https://google.com/', { openExternal:true });" data-ajax="false" data-role="buttion" class="ui-btn">Link</a>
-				
+				<a href="#juryOpt" data-role="buttion" class="ui-btn">Jury Opt In/Out</a>			
 				
 			</div>
 		</div>
 		
-		
-		<!-- Page 2 -->
-		<div data-role="page" id="page2">
-			<div data-role="content" data-theme="a">
-				Test
+		<!-- Jury Status -->
+		<div data-role="page" id="juryStatus">
+			<div data-role="content" data-theme="a" style="padding:0.5em;">
+				<h2>Check Your Group Number <br/>
+				Reporting Instructions</h2>
+				
+				<!-- Begin content body -->
+                <p>As call-in jurors you are required to check this website beginning at 5:00 p.m. as indicated on your jury summons. Updated instructions will be posted on this website daily. If you are not instructed to report by the end of the week following your summons date, your service will be completed.</p>
+				<p>If employed, please check this web site from work. DO NOT take the day off from work. If you are not required to report, you simply stay at work and follow the instructions posted.</p>
+				<p>Being on "stand-by" or "on-call" jury service may not suit your schedule. If this is the case, please call (209) 992-5500 so that jury staff can work with your schedule to arrange for a specific date for you to report for jury service.</p>
+
+
+				<table bgcolor="#eef0f2" border="0" cellspacing="2" columnheaders="False" id="" rules="all" width="100%">
+					<tbody>
+						<tr>
+							<td>
+								<table border="1" bordercolor="black" width="100%" align="center">
+									<tbody>
+										<tr>
+											<td align="center"><b>THE WEEK OF: Monday, January 12, 2015</b>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p></p>
+								<center>Last updated on Wednesday, January 14, 2015 15:39:14.</center>
+								<p></p>
+								<center>Note: This page is updated by 5:00 p.m. every day except on court holidays and weekends.</center>
+								<p></p>
+								<table align="center" width="100%" border="1" bordercolor="black">
+									<tbody>
+										<tr>
+											<td width="50%" align="center"><b>Group Number(s)</b>
+												</td>
+												<td align="center"><b>Instructions</b>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<center>119 through 130</center>
+												</td>
+												<td>You are to check this website on Thursday, January 15, 2015 after 5:00 p.m. for further instructions. Thank you.</td>
+											</tr>
+											<tr>
+												<td>
+													<center>Please be sure you are ONLY checking this website if you are summoned for the week of 1/12/2015. Otherwise the information will not be correct.</center>
+												</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<p>&nbsp;</p>
+				<p><font color="red" size="2"><b>AT THIS TIME, JURY TRIALS ONLY TAKE PLACE IN STOCKTON.  ALL JURORS INSTRUCTED TO REPORT FOR JURY SERVICE SHOULD CHECK-IN WITH THE JURY ASSEMBLY ROOM LOCATED IN THE BASEMENT OF THE STOCKTON COURTHOUSE AT 222 E. WEBER AVENUE, STOCKTON, CA 95202. </b></font> Please bring your entire summons with you and have the residence phone number, work number, occupation and employer information filled in before you come into the jury assembly room. Fill in the name and address information only if you have a change of name and/or address. Make sure to sign the juror information form before you turn it in to the jury staff.</p>
+				<p>Designated handicapped parking spaces are available adjacent to the Courthouse on Weber, San Joaquin and Main Streets, as well as the Essential Services Building.</p>
+				<p>If you require other disability related parking accommodations, please telephone the jury staff at 992-5500 and advise them of your need.</p>
+                 <!-- End content body -->
 				<a href="#home-page">Home</a>
 			</div>
 		</div>
