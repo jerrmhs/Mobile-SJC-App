@@ -237,7 +237,7 @@ html .ui-panel-page-container-a {
     padding-top: 50%;
 }
 
-h2 hr {
+h2 hr, h1 hr {
 	margin:0px 0px 10px 0px !important;
 }
 
@@ -270,4 +270,13 @@ ul {
 	text-align: center;
 	margin-top: 0px;
 	font-weight: bold;
+}
+table.valign tbody tr td {
+	vertical-align: text-top;
+}
+table.halfcol tbody tr td {
+	width: 50% !important;
+}
+table.fullwidth {
+	width: 100%;
 }
