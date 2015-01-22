@@ -280,3 +280,6 @@ table.halfcol tbody tr td {
 table.fullwidth {
 	width: 100%;
 }
+.ui-content {
+	padding:0.5em !important;
+}
