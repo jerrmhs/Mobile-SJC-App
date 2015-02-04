@@ -1,3 +1,4 @@
+ // window._cordovaNative = true;
 $(function() {
 	// $.event.special.swipe.scrollSupressionThreshold = 10; // More than this horizontal displacement, and we will suppress scrolling.
 	$.event.special.swipe.horizontalDistanceThreshold = 25; // Swipe horizontal displacement must be more than this.
@@ -11,5 +12,11 @@ $(function() {
 			$( "#left-panel" ).panel( "open" );
 		//}
 	});
-	
+
 });
+function openURL(urlString){ 
+	myURL = encodeURI(urlString);
+	window.open(myURL, '_system');
+	// navigator.app.loadUrl(urlString, {openExternal : true});
+}
+ 

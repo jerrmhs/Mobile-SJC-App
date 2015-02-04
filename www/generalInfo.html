@@ -46,6 +46,10 @@
 		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/generalInfo.js"></script>
+		<!-- delect when build 
+		<script type="text/javascript" src="cordova.js"></script>
+		-->
     </head>
 	
 	<body>
@@ -67,17 +71,17 @@
 				<li><a href="onlineServices.html" data-ajax="false">Online Services</a></li>
 				<li data-icon="false"><a href="#generalInfo-page">General Info</a></li>
 				<ul data-role="listview">
-					<li><a href="#">Court Locations and Contact Information</a></li>
-					<li><a href="#">Jury Service</a></li>
+					<li><a href="#locationsContact">Locations and Contact Info</a></li>
+					<li><a href="#juryService">Jury Service</a></li>
 					<li><a href="#traffic">Traffic</a></li>
-					<li><a href="#">Employment</a></li>
+					<li><a href="#employment">Employment</a></li>
 				</ul>
 			</ul>
 		</div>
 		
 		<!-- General Information -->
 		<div data-role="page" id="generalInfo-page" data-theme="a">
-			<div data-role="content" data-theme="a" style="padding:0.5em;">
+			<div data-role="content" data-theme="a">
 				<h1>General Information</h1>
 				<hr>
 				<h2>Court Locations, Hours & Contact Information</h2>
@@ -95,6 +99,29 @@
 				<p>The California Constitution provides for a system of courts. The Superior Court serves all of the citizens of San Joaquin County as the general trial court. The Superior Court has jurisdiction over all felonies, misdemeanors, civil cases of all amounts, small claims, traffic, cases involving title and possession of real property, dissolution of marriage and child custody, probate, conservatorship, mental health, and juvenile proceedings. These proceedings are conducted at the Stockton Courthouse, Juvenile Justice Center in French Camp, and branch court in Manteca.</p>
 				<p>In 2001, San Joaquin County Superior Court received the prestigious Ralph N. Kleps Award for its Court-Community Leadership and Liaison Program. San Joaquin County Superior Court was also a Ralph N. Kleps Award recipient in 2000 for its innovative Jury Duty Compliance Program.</p>
 				<p>The annual award, instituted in 1991, is given in recognition of innovative state court programs and is named for California's first Administrative Director for the Courts, Ralph N. Kleps.</p>
+				
+			</div>
+		</div>
+		
+		<!-- Contact information  -->
+		<!-- Links to all other info pages -->
+		<div data-role="page" id="locationsContact">
+			<div data-role="content">
+				<h1 style="display:inline-block;">Court Locations, Hours & Contact Information</h1>
+				<div class="content-block">
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a">
+							<a class="ui-btn" style="font-size:13px;" href="#stocktonInfo">Stockton Courthouse</a>
+							<a class="ui-btn" style="font-size:13px;" href="#juvenileInfo">Juvenile Justice Center</a>
+							<a class="ui-btn" style="font-size:13px;" href="#mantecaInfo">Manteca Branch</a>
+						</div>
+						<div class="ui-block-b">
+							<a class="ui-btn" style="font-size:13px;" data-theme="a" href="#familyInfo">Stockton Family Law Courthouse</a>
+							<a class="ui-btn" style="font-size:13px;" data-theme="a" href="#lodiInfo">Lodi Branch</a>
+							<a class="ui-btn" style="font-size:13px;" data-theme="a" href="#tracyInfo">Tracy Branch</a>
+						</div>
+					</fieldset>
+				</div>
 			</div>
 		</div>
 		
@@ -102,7 +129,7 @@
 		<!-- Page Stockton Contact page -->
 		<!-- Directions -->
 		<div data-role="page" id="stocktonInfo">
-			<div data-role="content" style="padding:0.5em;">
+			<div data-role="content">
 				<center><h1 style="display:inline-block;">Stockton Courthouse</h1></center>
 				<div data-role="navbar">
 					<ul>
@@ -157,7 +184,7 @@
 		</div>
 		
 		<!-- Phone Numbers -->
-		<div data-role="page" id="stocktonPhone" style="padding:0.5em;">
+		<div data-role="page" id="stocktonPhone">
 			<div data-role="content">
 			<center><h1>Stockton Courthouse</h1></center>
 			<div data-role="navbar">
@@ -170,19 +197,19 @@
 			
 			<br/><h3><u><strong>Telephone Numbers</strong></u></h3>
 			<p>*All telephone numbers use 209 area code, unless listed otherwise. &nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;</span></span></span></p>
-			<p>&nbsp;992-5522 &nbsp; Civil Limited</p>
-			<p>&nbsp;992-5522 &nbsp; Small Claims</p>
-			<p>&nbsp;992-5521 &nbsp; Criminal</p>
-			<p>&nbsp;992-5522 &nbsp; Domestic Violence</p>
-			<p>&nbsp;992-5522 &nbsp; Unlawful Detainer (Landlord-Tenant)</p>
-			<p>&nbsp;992-5521 &nbsp; Passports</p>
-			<p>&nbsp;992-5500 &nbsp; Jury Services</p>
-			<p>(877) 872-0476&nbsp;&nbsp; Traffic</p>
+			<p><a href="tel:+1209-922-5522">&nbsp;992-5522</a> &nbsp; Civil Limited</p>
+			<p><a href="tel:+1209-922-5522">&nbsp;992-5522</a> &nbsp; Small Claims</p>
+			<p><a href="tel:+1209-922-5521">&nbsp;992-5521</a> &nbsp; Criminal</p>
+			<p><a href="tel:+1209-922-5522">&nbsp;992-5522</a> &nbsp; Domestic Violence</p>
+			<p><a href="tel:+1209-922-5522">&nbsp;992-5522</a> &nbsp; Unlawful Detainer (Landlord-Tenant)</p>
+			<p><a href="tel:+1209-922-5521">&nbsp;992-5521</a> &nbsp; Passports</p>
+			<p><a href="tel:+1209-922-5500">&nbsp;992-5500</a> &nbsp; Jury Services</p>
+			<p><a href="tel:+1877-877-0476">(877) 872-0476</a> &nbsp;&nbsp; Traffic</p>
 			</div>	
 		</div>
 		
 		<!-- Hours -->
-		<div data-role="page" id="stocktonHours" style="padding:0.5em;">
+		<div data-role="page" id="stocktonHours">
 			<div data-role="content">
 			<center><h1>Stockton Courthouse</h1></center>
 			<div data-role="navbar">
@@ -204,8 +231,8 @@
 		
 		<!-- Page Stockton Family Law Contact page -->
 		<!-- Directions -->
-		<div data-role="page" id="familyInfo" class="ui-content">
-			<div data-role="content" style="padding:0.5em;">
+		<div data-role="page" id="familyInfo">
+			<div data-role="content" >
 				<center><h1>Stockton Family Law Courthouse</h1></center>
 				<div data-role="navbar">
 					<ul>
@@ -239,12 +266,11 @@
 				</ol>
 				<u><h3>Parking:</h3></u>
 				<p>Metered parking is available along the streets.  Public parking garages are also avalable. </p>
-					<a href="#home-page">Home</a>
 		</div>
 		</div>
 		
 		<!-- Phone Numbers -->
-		<div data-role="page" id="familyPhone" style="padding:0.5em;">
+		<div data-role="page" id="familyPhone">
 			<div data-role="content">
 			<center><h1>Stockton Family Law Courthouse</h1></center>
 			<div data-role="navbar">
@@ -256,14 +282,14 @@
 			</div><!-- /navbar -->
 			<h3><u><strong>Telephone Numbers</strong></u></h3>
 			<p>*All telephone numbers use 209 area code, unless listed otherwise.<span style="display: none">&nbsp;<span style="display: none">&nbsp;</span></span></p>
-			<p>992-5555&nbsp;&nbsp;&nbsp;&nbsp;Information</p>
-			<p>992-5283 &nbsp; &nbsp;Facilitator-Pro Per Clinic</p>
-			<p>992-5690 &nbsp; &nbsp;Family Law Services</p>
+			<p><a href="tel:+1209-992-5555">992-5555</a> &nbsp; &nbsp;&nbsp;&nbsp;Information</p>
+			<p><a href="tel:+1209-992-5283">992-5283</a> &nbsp; &nbsp;Facilitator-Pro Per Clinic</p>
+			<p><a href="tel:+1209-992-5690">992-5690</a> &nbsp; &nbsp;Family Law Services</p>
 		</div>	
 		</div>
 		
 		<!-- Hours -->
-		<div data-role="page" id="familyHours" style="padding:0.5em;">
+		<div data-role="page" id="familyHours">
 			<div data-role="content">
 			<center><h1>Stockton Family Law Courthouse</h1></center>
 			<div data-role="navbar">
@@ -286,8 +312,8 @@
 		
 		<!-- Page Juvenile Justice Contact page -->
 		<!-- Directions -->
-		<div data-role="page" id="juvenileInfo" class="ui-content">
-			<div data-role="content" style="padding:0.5em;">
+		<div data-role="page" id="juvenileInfo">
+			<div data-role="content">
 				<center><h1>Juvenile Justice Center</h1></center>
 				<div data-role="navbar">
 					<ul>
@@ -311,12 +337,11 @@
 				<p>The Juvenile Justice Center is located with the Juvenile Probation Department in French Camp on Mathews Road. From I-5 North or South, take the Mathews Road exit and head west approximately 1/2 mile and the Juvenile Justice Center is on the north side of Mathews Road. Departments J-1 and J-2 and the administrative support staff are located in this building.</p>
 				<u><h3>Parking:</h3></u>
 				<p>There is free parking in the lot adjacent to the building </p>
-					<a href="#home-page">Home</a>
 		</div>
 		</div>
 		
 		<!-- Phone Numbers -->
-		<div data-role="page" id="juvenilePhone" style="padding:0.5em;">
+		<div data-role="page" id="juvenilePhone">
 			<div data-role="content">
 			<center><h1>Juvenile Justice Center</h1></center>
 			<div data-role="navbar">
@@ -328,12 +353,12 @@
 			</div><!-- /navbar -->
 			<h3><u><strong>Telephone Numbers</strong></u></h3>
 			<p>&nbsp;*All telephone numbers use 209 area code, unless listed otherwise.</p>
-			<p>992-5698 &nbsp; &nbsp; Clerk's Office</p>
+			<p><a href="tel:+1209-992-5698">992-5698</a> &nbsp; &nbsp; Clerk's Office</p>
 		</div>	
 		</div>
 		
 		<!-- Hours -->
-		<div data-role="page" id="juvenileHours" style="padding:0.5em;">
+		<div data-role="page" id="juvenileHours">
 			<div data-role="content">
 			<center><h1>Juvenile Justice Center</h1></center>
 			<div data-role="navbar">
@@ -356,8 +381,8 @@
 		
 		<!-- Page Lodi Branch Contact page -->
 		<!-- Directions -->
-		<div data-role="page" id="lodiInfo" class="ui-content">
-			<div data-role="content" style="padding:0.5em;">
+		<div data-role="page" id="lodiInfo">
+			<div data-role="content">
 				<center><h1>Lodi Branch</h1></center>
 				<div data-role="navbar">
 					<ul>
@@ -384,12 +409,11 @@
 				<p>From I-5 North or South, take the Kettleman Lane/Highway 12 exit and head east approximately 5 miles to Lodi. Turn north at Church Street and proceed north to Elm Street. Turn west on Elm Street to the courthouse locations. From 99 North or South, take the Kettleman Lane/Highway 12 exit and head west.. Turn north at Church Street and proceed north to Elm Street. Turn west on Elm Street to the courthouse locations.</p>
 				<u><h3>Parking:</h3></u>
 				<p>There is free parking in the lot across the street fromc the building housing Department L-2.</p>
-					<a href="#home-page">Home</a>
-		</div>
+			</div>
 		</div>
 		
 		<!-- Phone Numbers -->
-		<div data-role="page" id="lodiPhone" style="padding:0.5em;">
+		<div data-role="page" id="lodiPhone">
 			<div data-role="content">
 			<center><h1>Lodi Branch</h1></center>
 			<div data-role="navbar">
@@ -401,19 +425,19 @@
 			</div><!-- /navbar -->
 			<h3><u><strong>Telephone Numbers</strong></u></h3>
 			<p>*All telephone numbers use 209 area code, unless listed otherwise. &nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;<span style="display: none">&nbsp;</span></span></span></p>
-			<p>&nbsp;992-5522 &nbsp; Civil Limited</p>
-			<p>&nbsp;992-5522 &nbsp; Small Claims</p>
-			<p>&nbsp;992-5521 &nbsp; Criminal</p>
-			<p>&nbsp;992-5522 &nbsp; Domestic Violence</p>
-			<p>&nbsp;992-5522 &nbsp; Unlawful Detainer (Landlord-Tenant)</p>
-			<p>&nbsp;992-5521 &nbsp; Passports</p>
-			<p>&nbsp;992-5500 &nbsp; Jury Services</p>
-			<p>(877) 872-0476&nbsp;&nbsp; Traffic</p>
+			<p><a href="tel:+1209-992-5522">&nbsp;992-5522</a> &nbsp; Civil Limited</p>
+			<p><a href="tel:+1209-992-5522">&nbsp;992-5522</a> &nbsp; Small Claims</p>
+			<p><a href="tel:+1209-992-5521">&nbsp;992-5521</a> &nbsp; Criminal</p>
+			<p><a href="tel:+1209-992-5522">&nbsp;992-5522</a> &nbsp; Domestic Violence</p>
+			<p><a href="tel:+1209-992-5522">&nbsp;992-5522</a> &nbsp; Unlawful Detainer (Landlord-Tenant)</p>
+			<p><a href="tel:+1209-992-5521">&nbsp;992-5521</a> &nbsp; Passports</p>
+			<p><a href="tel:+1209-992-5500">&nbsp;992-5500</a> &nbsp; Jury Services</p>
+			<p><a href="tel:+1877-872-0476">(877) 872-0476</a> &nbsp;&nbsp; Traffic</p>
 		</div>	
 		</div>
 		
 		<!-- Hours -->
-		<div data-role="page" id="lodiHours" style="padding:0.5em;">
+		<div data-role="page" id="lodiHours">
 			<div data-role="content">
 			<center><h1>Lodi Branch</h1></center>
 			<div data-role="navbar">
@@ -435,8 +459,8 @@
 		
 		<!-- Page manteca Branch Contact page -->
 		<!-- Directions -->
-		<div data-role="page" id="mantecaInfo" class="ui-content">
-			<div data-role="content" style="padding:0.5em;">
+		<div data-role="page" id="mantecaInfo">
+			<div data-role="content">
 				<center><h1>Manteca Branch</h1></center>
 				<div data-role="navbar">
 					<ul>
@@ -445,6 +469,7 @@
 						<li><a href="#mantecaHours">Hours of Operations</a></li>
 					</ul>
 				</div><!-- /navbar -->
+				<br/>
 				<a href="geo:37.799203, -121.213477"><u>Physical Address:</u><br/>
 				315 E. Center Street<br/>
 				Manteca, California 95336</a><br/>
@@ -459,12 +484,11 @@
 				<p>From 99 North or South, take Highway 120 West and take the Main Street Exit. Proceed north to Center Street. Turn east on Center Street and proceed three blocks to the Courthouse. From I-5 North or South, take Highway 120 east and take the Main Street Exit. Proceed north to Center Street. Turn east on Center Street and proceed three blocks to the Courthouse.</p>
 				<u><h3>Parking:</h3></u>
 				<p>There is free parking around the courthouse and in a lot to the north.</p>
-					<a href="#home-page">Home</a>
 		</div>
 		</div>
 		
 		<!-- Phone Numbers -->
-		<div data-role="page" id="mantecaPhone" style="padding:0.5em;">
+		<div data-role="page" id="mantecaPhone">
 			<div data-role="content">
 			<center><h1>Manteca Branch</h1></center>
 			<div data-role="navbar">
@@ -476,16 +500,16 @@
 			</div><!-- /navbar -->
 			<h3><u><strong>Telephone Numbers</strong></u></h3>
 			<p>*All telephone numbers use 209 area code, unless listed otherwise.</p>
-			<p>&nbsp;239-1316&nbsp;&nbsp;&nbsp; Criminal</p>
-			<p>&nbsp;239-1316 &nbsp;Traffic</p>
-			<p>&nbsp;239-9188&nbsp;&nbsp;&nbsp; Civil Harassment</p>
-			<p>&nbsp;239-9188&nbsp;&nbsp;&nbsp; Unlawful Detainer (Landlord-Tenant)</p>
-			<p>&nbsp;992-5555 &nbsp; &nbsp;Passports (Processed at Main Stockton Court only.)</p>
+			<p><a href="tel:+1209-239-1316">&nbsp;239-1316</a> &nbsp;&nbsp;&nbsp; Criminal</p>
+			<p><a href="tel:+1209-239-1316">&nbsp;239-1316</a> &nbsp;Traffic</p>
+			<p><a href="tel:+1209-239-9188">&nbsp;239-9188</a> &nbsp;&nbsp;&nbsp; Civil Harassment</p>
+			<p><a href="tel:+1209-239-9188">&nbsp;239-9188</a> &nbsp;&nbsp;&nbsp; Unlawful Detainer (Landlord-Tenant)</p>
+			<p><a href="tel:+1209-992-5555">&nbsp;992-5555</a> &nbsp; &nbsp;Passports (Processed at Main Stockton Court only.)</p>
 		</div>	
 		</div>
 		
 		<!-- Hours -->
-		<div data-role="page" id="mantecaHours" style="padding:0.5em;">
+		<div data-role="page" id="mantecaHours">
 			<div data-role="content">
 				<center><h1>Manteca Branch</h1></center>
 				<div data-role="navbar">
@@ -518,7 +542,7 @@
 					<tr>
 						<td>
 							<label>Phone:</label>
-							(209) 992-5692 <br />
+							<a href="tel:+1209-992-5692">(209) 992-5692</a> <br />
 							Monday - Friday<br />
 							8:00 a.m. - 4:00 p.m.
 						</td>
@@ -540,6 +564,104 @@
 					<a class="ui-btn" href="https://www.paybill.com/sjcourt/" onclick="window.open(this.href,'_blank'); return false;">Pay Traffic Ticket</a>
 					<a class="ui-btn" href="https://www.photonotice.com/" onclick="window.open(this.href,'_blank'); return false;">View Your Red Light Photo/Video</a>
 				</div>
+			</div>
+		</div>
+		
+		<!-- Jury Service  -->
+		<div data-role="page" id="juryService">
+			<div data-role="content">
+				<h1 style="display:inline-block;">Jury Service<hr></h1>
+				<a href="#"><h2>Check Your Group Number Reporting Instructions Here</h2></a>
+				<br/>
+				<div class="content-block">
+					<label>Business Hours:</label>
+					Located at <a href="geo:37.953555, -121.287759">222 E. Weber Avenue, Basement Level, Stockton, CA 95202.</a><br/>
+					Open Monday through Friday, 8:00 a.m. to 3:00 p.m. <i>(extended hours based on courtroom need)</i><br/>
+				</div>
+				<table class="fullwidth valign halfcol">
+					<tr>
+						<td>
+							<label>Phone:</label>
+							<a href="tel:+1209-992-5500">(209) 992-5500</a> or <a href="tel:+1800-479-2456">(800) 479-2456</a> <br/>Monday through Friday, 8:00 a.m. to 4:00 p.m.<br />
+						</td>
+						<td>
+							<label>Mailing Address:</label>
+							Jury Room, P.O. Box 201022, Stockton, CA 95201<br />
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<p>The right to a trial by jury is the privilege of every person in the United States, whether citizen or not. This cherished right is guaranteed by both the United States and California Constitutions.</p>
+				<p>You have been summoned to render an important service as a juror. You have enjoyed the privileges of citizenship and the protection of your liberties and property through our system of self-government. Now, for a short time, you will serve as a juror, an officer of the court, along with the lawyers and the judges. As a juror, you are an important member of the judicial system of San Joaquin County and California.</p>
+				<div class="notice content-block">
+					<h2>Alert:<hr></h2>
+					<div>
+						<h4>San Joaquin Superior Court has become aware of telephone scams targeting members of the public.</h4>
+						<p>
+							They call, claiming to be a law enforcement official and say that you have a warrant out for your arrest due to failing to appear for jury service. They request money from you to have the warrant cleared and state that if you do not pay you will be arrested. Law enforcement and Court employees will NEVER call to ask you for money or to provide financial or personal information.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Human Resources  -->
+		<div data-role="page" id="employment">
+			<div data-role="content">
+				<h1 style="display:inline-block;">Human Resources<hr></h1>
+				<div class="content-block">
+					<label>Address:</label>
+					Superior Court of California, County of San Joaquin<br/>
+					Human Resources Department<br/>
+					222 E. Weber Avenue, Room 141<br/>
+					PO Box 201022<br/>
+					Stockton, CA 95201<br/>
+				</div>
+				<table class="fullwidth valign halfcol">
+					<tr>
+						<td>
+							<label>Phone:</label>
+							<a href="tel:+1209-992-5274">(209) 992-5274</a><br/>Monday - Friday,<br/>
+							8:00 a.m. to 4:00 p.m.<br />
+						</td>
+						<td>
+							<label>Email:</label>
+							<a href="mailto:hr@sjcourts.org">hr@sjcourts.org</a><br />
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<h2>Employment<hr></h2>
+				<p>The Court is an Equal Opportunity Employer and encourages applications from all persons regardless of their race, ethnic background, national origin, religion, gender, sexual orientation, marital status, age or disability. Please see below for current listings:</p>
+				<div id="currentListings" class="content-block">
+					<h4>Connect to the internet to see current listings.</h4>
+				</div>
+				<h2>Job Descriptions and Salary/Benefit Information<hr></h2>
+				<div class="content-block">
+					<u>Job Descriptions</u>
+					<ul>
+						<li><a href="/human-resources/jobs">The Superior Court of California, County of San Joaquin Job Descriptions</a></li>
+					</ul>
+					<u>Salary and Benefit Information</u>
+					<ul>
+						<li><a onclick='navigator.app.loadUrl("http://www.sjcourts.org/sites/default/files/pdfs/SJC_BenefitGuide_2014.pdf", {openExternal : true});' href="#">2014 Benefits Guide for Active Employees</a></li>
+						<li><a onclick='navigator.app.loadUrl("http://www.sjcourts.org/sites/default/files/pdfs/Court Biweekly Salary 12-18-14.pdf", {openExternal : true});' href="#">2014 Court Biweekly Salary Information</a></li>
+						<li><a onclick='navigator.app.loadUrl("http://www.sjcourts.org/sites/default/files/images/Court Monthly Salary - 12-18-14.pdf", {openExternal : true});' href="#">2014 Court Monthly Salary Information</a></li>
+					</ul>
+				</div>
+				<h2>Memorandum of Understandings (MOUs) &amp; Personnel Rules<hr></h2>
+				<div class="content-block">
+					<u>Memorandum of Understandings</u>
+					<ul>
+						<li><a onclick='navigator.app.loadUrl("http://www.sjcourts.org/sites/default/files/pdfs/2013_2014_OOT_MOU.pdf", {openExternal : true});' href="#">Office and Office Techical Bargaining Unit</a></li>
+						<li><a onclick='navigator.app.loadUrl("http://www.sjcourts.org/sites/default/files/pdfs/2013_2014_PRO_MOU.pdf", {openExternal : true});' href="#">Professional Bargaining Unit</a></li>
+					</ul>
+					<u>Personnel Rules</u>
+					<ul>
+						<li><a onclick='navigator.app.loadUrl("http://www.sjcourts.org/sites/default/files/pdfs/2010_12_10_PERSONNEL_RULES.pdf", {openExternal : true});' href="#">Personnel Rules as of Dec 10th, 2010</a></li>
+					</ul> 
+				</div>
+	
 			</div>
 		</div>
 		

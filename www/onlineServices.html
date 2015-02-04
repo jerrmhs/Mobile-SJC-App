@@ -43,9 +43,24 @@
 		<title>SCSJC App</title>
 		
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+		  //reset type=date inputs to text
+		  $( document ).bind( "mobileinit", function(){
+			$.mobile.page.prototype.options.degradeInputs.date = true;
+		  });	
+		</script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/onlineServices.js"></script>
+		
+		<script src="https://rawgithub.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+		<script id="mobile-datepicker" src="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile.datepicker.theme.css" />
+		<link rel="stylesheet" href="css/jquery-mobie-datepicker-wrapper.css" />
+		<!--
+		<script type="text/javascript" src="cordova.js"></script>
+		-->
     </head>
 	
 	
@@ -68,9 +83,11 @@
 				<li><a href="index.html" data-ajax="false">Home</a></li>
 				<li data-icon="false"><a>Online Services</a></li>
 				<ul data-role="listview">
-					<li><a href="#">Pay Traffic Ticket</a></li>
-					<li><a href="#">Get Jury Status</a></li>
-					<li><a href="#">Juror Notification Service</a></li>
+					<li><a href=""https://www.paybill.com/sjcourt/">Pay Traffic Ticket</a></li>
+					<li><a href="#juryStatus">Get Jury Status</a></li>
+					<li><a href="#juryOpt">Juror Notification Service</a></li>
+					<li><a href="#relatedWebsites">Resources and Related Websites</a></li>
+					<li><a href="#testing">Testing</a></li>
 				</ul>
 				<li><a href="generalInfo.html" data-ajax="false">General Info</a></li>
 			</ul>
@@ -86,7 +103,7 @@
 				
 				<a href="https://www.paybill.com/sjcourt/" data-ajax="false" data-role="buttion" class="ui-btn">Pay Traffic Tickets/Fines</a>
 				<a href="#juryStatus" data-role="buttion" class="ui-btn">Get Jury Status</a>
-				<a href="#juryOpt" data-role="buttion" class="ui-btn">Jury Opt In/Out</a>			
+				<a href="#juryOpt" data-role="buttion" class="ui-btn">Juror Notification Service</a>			
 				
 			</div>
 		</div>
@@ -102,58 +119,136 @@
 				<p>If employed, please check this web site from work. DO NOT take the day off from work. If you are not required to report, you simply stay at work and follow the instructions posted.</p>
 				<p>Being on "stand-by" or "on-call" jury service may not suit your schedule. If this is the case, please call (209) 992-5500 so that jury staff can work with your schedule to arrange for a specific date for you to report for jury service.</p>
 
-
-				<table bgcolor="#eef0f2" border="0" cellspacing="2" columnheaders="False" id="" rules="all" width="100%">
-					<tbody>
-						<tr>
-							<td>
-								<table border="1" bordercolor="black" width="100%" align="center">
-									<tbody>
-										<tr>
-											<td align="center"><b>THE WEEK OF: Monday, January 12, 2015</b>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<p></p>
-								<center>Last updated on Wednesday, January 14, 2015 15:39:14.</center>
-								<p></p>
-								<center>Note: This page is updated by 5:00 p.m. every day except on court holidays and weekends.</center>
-								<p></p>
-								<table align="center" width="100%" border="1" bordercolor="black">
-									<tbody>
-										<tr>
-											<td width="50%" align="center"><b>Group Number(s)</b>
-												</td>
-												<td align="center"><b>Instructions</b>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<center>119 through 130</center>
-												</td>
-												<td>You are to check this website on Thursday, January 15, 2015 after 5:00 p.m. for further instructions. Thank you.</td>
-											</tr>
-											<tr>
-												<td>
-													<center>Please be sure you are ONLY checking this website if you are summoned for the week of 1/12/2015. Otherwise the information will not be correct.</center>
-												</td>
-												<td></td>
-											</tr>
-										</tbody>
-									</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-
+				<div id="juryinfo">
+					<h4>To see the Jury Status please connect to the internet to view the resuilts.</h4>
+				</div>
 
 				<p>&nbsp;</p>
 				<p><font color="red" size="2"><b>AT THIS TIME, JURY TRIALS ONLY TAKE PLACE IN STOCKTON.  ALL JURORS INSTRUCTED TO REPORT FOR JURY SERVICE SHOULD CHECK-IN WITH THE JURY ASSEMBLY ROOM LOCATED IN THE BASEMENT OF THE STOCKTON COURTHOUSE AT 222 E. WEBER AVENUE, STOCKTON, CA 95202. </b></font> Please bring your entire summons with you and have the residence phone number, work number, occupation and employer information filled in before you come into the jury assembly room. Fill in the name and address information only if you have a change of name and/or address. Make sure to sign the juror information form before you turn it in to the jury staff.</p>
 				<p>Designated handicapped parking spaces are available adjacent to the Courthouse on Weber, San Joaquin and Main Streets, as well as the Essential Services Building.</p>
 				<p>If you require other disability related parking accommodations, please telephone the jury staff at 992-5500 and advise them of your need.</p>
                  <!-- End content body -->
-				<a href="#home-page">Home</a>
+			</div>
+		</div>
+		
+		<!-- Jury opt in -->
+		<div data-role="page" id="juryOpt">
+			<div data-role="content" data-theme="a">
+				<h1>Juror Notification Subscription</h1>
+				
+				<!-- Begin content body -->
+				<div id="notify">
+				</div>
+				<div>
+					Enter your cellphone number (i.e. 2095553674) and cellphone provider to receive juror notifications for this week.<br/>
+					Required fields are marked with <span style="color: red;">*.</span><br/><br/>
+				</div>
+				<div id="juryForm">
+				
+					<form name="juryForm">
+						Cellphone Number: <input id="mobile" type="tel" name="mobile" required>
+						Cellphone Provider:
+						<select id="carrier" name="carrier" required>
+						  <option value="vtext.com">Verizon</option>
+						  <option value="txt.att.net">At&T</option>
+						  <option value="mercedes">Mercedes</option>
+						  <option value="tmomail.net">T-Mobile</option>
+						  <option value="messaging.sprintpcs.com">Sprint</option>
+						  <option value="vmobl.com">VirginMobile</option>
+						  <option value="mymetropcs.com">MetroPCS</option>
+						  <option value="myboostmobile.com">BoostMobile</option>
+						  <option value="mmst5.tracfone.com">Tracfone</option>
+						  <option value="sms.mycricket.com">Cricket</option>
+						  <option value="messaging.nextel.com">Nextel</option>
+						  <option value="message.alltel.com">Alltel</option>
+						  <option value="ptel.com">Ptel</option>
+						  <option value="tms.suncom.com">Suncom</option>
+						  <option value="qwestmp.com">Qwest</option>
+						  <option value="email.uscc.net">U.S.Cel</option>
+						</select>
+<script>
+  $(function() {
+    $( "#datepicker" ).date({dateFormat:"yy-mm-dd"});
+  });
+</script>
+						Date: <input name="date" type="text" id="datepicker" readonly='true' required>
+						Choose when you want to start receiving juror notifications
+						<br/>
+						<br/>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+                 <!-- End content body -->
+			</div>
+		</div>
+		
+		<!-- Resrouces Ralted Websites -->
+		<div data-role="page" id="relatedWebsites">
+			<div data-role="content" data-theme="a">
+				<h1>Resources and Related Websites</h1>
+				
+				<!-- Begin content body -->
+				<h4>California Courts Website<a name="california-court-websites"></a></h4>
+				<ul style="padding-left:20px">
+					<li><a href="http://www.courts.ca.gov/rules.htm" target="_blank">California Rules of Court</a></li>
+					<li><a href="http://www.courts.ca.gov/forms.htm" target="_blank">Judicial Council Forms - downloadable and printable</a></li>
+					<li><a href="http://www.courts.ca.gov/selfhelp.htm" target="_blank">California Courts On-line Self-Help Center</a></li>
+					<li><a href="http://www.courts.ca.gov/superiorcourts.htm" target="_blank">Other California Superior Courts</a></li>
+					<li><a href="http://www.courts.ca.gov/programs-interpreters.htm" target="_blank">Court Interpreters Program</a></li>
+					<li><a href="http://www.courts.ca.gov/programs-commoutreach.htm" target="_blank">Court and Community Collaboration</a></li>
+					<li><a href="http://www.courts.ca.gov/programs-cfcc.htm" target="_blank">Programs for&nbsp;Families and Children</a></li>
+				</ul>
+				<h4>Other Court-Related Resources<a name="court-related-websites"></a></h4>
+				<ul style="padding-left:20px">
+					<li><a href="http://sjcbar.org/" target="_blank">San Joaquin County Bar Association</a></li>
+					<li><a href="http://www.sjcbar.org/lawyer-referral-service/" target="_blank">Lawyer Referral Service</a></li>
+				<!--<li><a href="http://www.sjclawlib.org/">San Joaquin County Law Library</a></li>-->	<li><a href="http://calbar.ca.gov/" target="_blank">The State Bar of California</a></li>
+					<li><a href="http://www.leginfo.ca.gov/" target="_blank">Official California Legislative Information</a></li>
+					<li><a href="http://www.leginfo.ca.gov/calaw.html" target="_blank">California Codes</a></li>
+					<li><a href="http://www.stocktongov.com/documents/default.html" target="_blank">Stockton Municipal Code</a></li>
+				<!--<li><a href="http://www.mediatorsrus.org">The Mediation Center of San Joaquin County</a></li>-->
+					<li><a href="http://www.supremecourtus.gov/" target="_blank">United States Supreme Court</a></li>
+				</ul>
+				<h4>San Joaquin County Websites<a name="san-joaquin-websites"></a></h4>
+				<ul style="padding-left:20px">
+					<li><a href="http://www.sjgov.org/" target="_blank">San Joaquin County</a></li>
+					<li><a href="http://www.co.san-joaquin.ca.us/DA/" target="_blank">District Attorney's Office</a></li>
+					<li><a href="http://www.co.san-joaquin.ca.us/pubdefender/" target="_blank">Public Defender's Office</a></li>
+					<li><a href="http://www.co.san-joaquin.ca.us/probation/" target="_blank">Probation Department</a></li>
+					<li><a href="http://sjsheriff.org/" target="_blank">Sheriff-Coroner</a></li>
+					<li><a href="http://www.co.san-joaquin.ca.us/childsupport/Default.asp" target="_blank">Department of Child Support Services</a></li>
+					<li><a href="http://www.sanjoaquinrtd.com" target="_blank">San Joaquin Regional Transit District (RTD)</a></li>
+					<li><a href="http://www.commuteconnection.com/" target="_blank">San Joaquin Council of Governments Commuter Connection</a></li>
+				</ul>
+				<h4>City Websites<a name="city-websites"></a></h4>
+				<ul style="padding-left:20px">
+					<li><a href="http://www.cityofescalon.org/" target="_blank">City of Escalon</a></li>
+					<li><a href="http://www.ci.lathrop.ca.us/" target="_blank">City of Lathrop</a></li>
+					<li><a href="http://www.lodi.gov/" target="_blank">City of Lodi</a></li>
+					<li><a href="http://www.ci.manteca.ca.us/" target="_blank">City of Manteca</a></li>
+					<li><a href="http://www.cityofripon.org/" target="_blank">City of Ripon</a></li>
+					<li><a href="http://www.ci.stockton.ca.us/" target="_blank">City of Stockton</a></li>
+					<li><a href="http://www.ci.tracy.ca.us/" target="_blank">City of Tracy</a></li>
+					<li><a href="http://www.mhcsd.com/" target="_blank">Mountain House</a></li>
+                <!-- End content body -->
+			</div>
+		</div>
+		
+		<div data-role="page" id="testing" data-theme='a'>
+			<div data-role="content">
+				<h2>Testing adding to the datebase</h2>
+				<p>Please note: The information on this site is provided to increase public access to your local courts. We make every attempt to keep the information current but that is not always possible. The information contained here does not constitute the official record of the court and may contain errors or omissions. By selecting an option below, you signify that you have read the foregoing.</p><br />
+				<br/>
+				<div id="testForm">
+					<form name="testForm">
+					
+					Name: <input id="firstName" type="text" name="firstName"> <input id="lastName" type="text" name="lastName">
+					Date: <input id="startDate" type="date" name="startDate">
+					<br/>
+					<br/>
+					<input type="submit" value="Submit">
+					</form>
+				
 			</div>
 		</div>
 		
