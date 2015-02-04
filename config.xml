@@ -1,7 +1,0 @@
-<config-file target="AndroidManifest.xml" parent="/manifest/application">
-    <activity android:name="com.foo.Foo" android:label="@string/sjcApp">
-        <intent-filter>
-        </intent-filter>
-    </activity>
-	<preference value="none" name="permissions"/>
-</config-file>
