@@ -11,7 +11,7 @@ $(function() {
 				$("div#newsFeed").html(resp);
 			},
 			error: function(resp){
-				console.log(resp);
+				$("div#newsFeed").html("<h4>Connect to the internet to see current listings.</h4>");
 			}
 		});
 		

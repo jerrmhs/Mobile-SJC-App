@@ -12,8 +12,7 @@ $(function() {
 				// alert("good");
 			},
 			error: function(resp){
-				console.log(resp);
-				alert("bad");
+				$("div#currentListings").html("<h4>Error: Can not access external data, please connect to the internet to see external data</h4>");
 			}
 		});
 });

@@ -15,8 +15,7 @@ $(function() {
 				// alert("good");
 			},
 			error: function(resp){
-				console.log(resp);
-				alert("bad");
+				$("div#juryinfo").html("<h4>Error: Can not access external data, please connect to the internet to see external data</h4>")
 			}
 		});
 	
@@ -64,8 +63,7 @@ $(function() {
 				$("#reqForm")[0].reset();
 			},
 			error: function(resp){
-				alert('bad');
-				console.log(resp);
+				alert("Error: Can not access external data, please connect to the internet to see external data.");
 			}
 		});
 		return false;

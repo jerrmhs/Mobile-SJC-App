@@ -58,9 +58,9 @@
 		<script id="mobile-datepicker" src="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script>
 		<link rel="stylesheet" href="css/jquery.mobile.datepicker.theme.css" />
 		<link rel="stylesheet" href="css/jquery-mobie-datepicker-wrapper.css" />
-		<!--
+		
 		<script type="text/javascript" src="cordova.js"></script>
-		-->
+		
     </head>
 	
 	
@@ -81,13 +81,12 @@
 			<ul data-role="listview" class="sidebar">
 				<li data-role="list-divider" id="left-panel-img"></li>
 				<li><a href="index.html" data-ajax="false">Home</a></li>
-				<li data-icon="false"><a>Online Services</a></li>
+				<li data-icon="false"><a data-ajax="false" href="onlineServices.html">Online Services</a></li>
 				<ul data-role="listview">
 					<li><a href=""https://www.paybill.com/sjcourt/">Pay Traffic Ticket</a></li>
 					<li><a href="#juryStatus">Get Jury Status</a></li>
 					<li><a href="#juryOpt">Juror Notification Service</a></li>
 					<li><a href="#relatedWebsites">Resources and Related Websites</a></li>
-					<li><a href="#testing">Testing</a></li>
 				</ul>
 				<li><a href="generalInfo.html" data-ajax="false">General Info</a></li>
 			</ul>
@@ -182,7 +181,7 @@
 			</div>
 		</div>
 		
-		<!-- Resrouces Ralted Websites -->
+		<!-- Resources related Websites -->
 		<div data-role="page" id="relatedWebsites">
 			<div data-role="content" data-theme="a">
 				<h1>Resources and Related Websites</h1>
@@ -202,11 +201,10 @@
 				<ul style="padding-left:20px">
 					<li><a href="http://sjcbar.org/" target="_blank">San Joaquin County Bar Association</a></li>
 					<li><a href="http://www.sjcbar.org/lawyer-referral-service/" target="_blank">Lawyer Referral Service</a></li>
-				<!--<li><a href="http://www.sjclawlib.org/">San Joaquin County Law Library</a></li>-->	<li><a href="http://calbar.ca.gov/" target="_blank">The State Bar of California</a></li>
+					<li><a href="http://calbar.ca.gov/" target="_blank">The State Bar of California</a></li>
 					<li><a href="http://www.leginfo.ca.gov/" target="_blank">Official California Legislative Information</a></li>
 					<li><a href="http://www.leginfo.ca.gov/calaw.html" target="_blank">California Codes</a></li>
 					<li><a href="http://www.stocktongov.com/documents/default.html" target="_blank">Stockton Municipal Code</a></li>
-				<!--<li><a href="http://www.mediatorsrus.org">The Mediation Center of San Joaquin County</a></li>-->
 					<li><a href="http://www.supremecourtus.gov/" target="_blank">United States Supreme Court</a></li>
 				</ul>
 				<h4>San Joaquin County Websites<a name="san-joaquin-websites"></a></h4>
@@ -234,23 +232,6 @@
 			</div>
 		</div>
 		
-		<div data-role="page" id="testing" data-theme='a'>
-			<div data-role="content">
-				<h2>Testing adding to the datebase</h2>
-				<p>Please note: The information on this site is provided to increase public access to your local courts. We make every attempt to keep the information current but that is not always possible. The information contained here does not constitute the official record of the court and may contain errors or omissions. By selecting an option below, you signify that you have read the foregoing.</p><br />
-				<br/>
-				<div id="testForm">
-					<form name="testForm">
-					
-					Name: <input id="firstName" type="text" name="firstName"> <input id="lastName" type="text" name="lastName">
-					Date: <input id="startDate" type="date" name="startDate">
-					<br/>
-					<br/>
-					<input type="submit" value="Submit">
-					</form>
-				
-			</div>
-		</div>
 		
 	</body>
 </html>
